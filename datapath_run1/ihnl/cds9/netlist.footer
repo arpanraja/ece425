@@ -1,0 +1,4 @@
+latch I1 ( q, net1, CLK);
+latch I0 ( net1, d, _CLK);
+
+endmodule

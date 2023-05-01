@@ -1,0 +1,6 @@
+add I12 ( cout, net26, cin, net33, net32, p);
+logic I11 ( net33, net32, p, inv_r, inv_s, r, s);
+cdsModule_4 I13 ( net3, _s0L, _s1L, p, net32, net33, s0L, s1L);
+cdsModule_3 I14 ( f, _s0ot, net3, net26, s0ot);
+
+endmodule

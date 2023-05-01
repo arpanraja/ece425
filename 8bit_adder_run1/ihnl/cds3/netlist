@@ -1,0 +1,36 @@
+// Library - ece425mp1, Cell - 8bit_adder, View - schematic
+// LAST TIME SAVED: Mar  3 15:44:44 2023
+// NETLIST TIME: Mar  3 15:44:55 2023
+`timescale 1ns / 1ns 
+
+module ece425mp1_8bit_adder_schematic ( cout, sum[0], sum[1], sum[2],
+     sum[3], sum[4], sum[5], sum[6], sum[7], a[0], a[1], a[2], a[3],
+     a[4], a[5], a[6], a[7], b[0], b[1], b[2], b[3], b[4], b[5], b[6],
+     b[7], cin );
+
+output  cout;
+
+input  cin;
+
+output [0:7]  sum;
+
+input [0:7]  b;
+input [0:7]  a;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp1";
+    specparam CDS_CELLNAME = "8bit_adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+full_adder I8 ( cout, sum[7], a[7], b[7], net7);
+full_adder I7 ( net7, sum[6], a[6], b[6], net4);
+full_adder I6 ( net4, sum[5], a[5], b[5], net2);
+full_adder I5 ( net2, sum[4], a[4], b[4], net3);
+full_adder I4 ( net3, sum[3], a[3], b[3], net6);
+full_adder I3 ( net6, sum[2], a[2], b[2], net5);
+full_adder I2 ( net5, sum[1], a[1], b[1], net1);
+full_adder I1 ( net1, sum[0], a[0], b[0], cin);
+
+endmodule

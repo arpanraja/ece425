@@ -1,0 +1,25 @@
+simcompare(64) 21.03-s007: (c) Copyright 2007-2021 Cadence Design Systems, Inc.
+sc> #
+sc> # This file, "compare.rule", contains commands to run simcompare
+sc> #
+sc> 
+sc> 
+sc> # You are comparing the following databases
+sc> #
+sc> golden /class/ece425/mp2/datapath_gold/datapath_gold.trn
+sc> test /home/arpanr2/ece425.work/datapath_run1/shm.db/shm.db.trn
+sc> 
+sc> # The comparison uses following configurations :
+sc> #
+sc> compare .  -start 0ns -end 100ns  -pos 2ns -neg 2ns  -maxerrors 200 
+Summary of compare set c1 (hierarchical):
+  Successful compares:    20/24
+  Expression miscompares: 6
+sc> 
+sc> 
+sc> # You have chosen the following reporting options :
+sc> #
+sc> 
+sc> report -all  -detail full  -output /home/arpanr2/ece425.work/datapath_run1/compare.out
+sc> save /home/arpanr2/ece425.work/datapath_run1/diff.db.out
+Simcompare(64) exit(1): Miscompares or timing violations!

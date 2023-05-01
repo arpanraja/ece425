@@ -1,0 +1,30 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  q0_out, q3_out;
+
+reg  _s0L, _s0Q, _s0R, _s0RS, _s0SS, _s0ot, _s1L, _s1Q, _s1R, _s1RS, 
+     _s1SS, _sY, cin, cp, f0_in, f3_in, inv_r, inv_s, lo, q0_in, q3_in
+     , reg_wr, s0L, s0Q, s0R, s0RS, s0SS, s0ot, s1L, s1Q, s1R, s1RS, 
+     s1SS, sY;
+
+wire [3:0]  f;
+wire [3:0]  y;
+wire [3:0]  c;
+wire [3:0]  p;
+
+reg [3:0]  d;
+reg [15:0]  select_b_hi;
+reg [15:0]  select_a_hi;
+
+
+
+datapath top(c, f, p, q0_out, q3_out, y, _s0L, _s0Q, _s0R, _s0RS, _s0SS
+     , _s0ot, _s1L, _s1Q, _s1R, _s1RS, _s1SS, _sY, cin, cp, d, f0_in, 
+     f3_in, inv_r, inv_s, lo, q0_in, q3_in, reg_wr, s0L, s0Q, s0R, s0RS
+     , s0SS, s0ot, s1L, s1Q, s1R, s1RS, s1SS, sY, select_a_hi, 
+     select_b_hi); 
+ 

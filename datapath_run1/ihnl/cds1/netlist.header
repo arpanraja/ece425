@@ -1,0 +1,18 @@
+// Library - ece425mp2, Cell - add, View - schematic
+// LAST TIME SAVED: May  1 00:33:35 2023
+// NETLIST TIME: May  1 11:52:16 2023
+`timescale 1ns / 1ns 
+
+module add ( cout, sum, cin, gen_lo, kill_hi, prop_hi );
+
+output  cout, sum;
+
+input  cin, gen_lo, kill_hi, prop_hi;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp2";
+    specparam CDS_CELLNAME = "add";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

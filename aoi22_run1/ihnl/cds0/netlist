@@ -1,0 +1,28 @@
+// Library - ece425mp1, Cell - aoi22, View - schematic
+// LAST TIME SAVED: Mar  1 14:28:02 2023
+// NETLIST TIME: Mar  1 14:28:10 2023
+`timescale 1ns / 1ns 
+
+module aoi22 ( y, a, b, c, d );
+
+output  y;
+
+input  a, b, c, d;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp1";
+    specparam CDS_CELLNAME = "aoi22";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+pfet M3 ( y, net1, b);
+pfet M2 ( net1, cds_globals.vdd_, d);
+pfet M1 ( y, net1, a);
+pfet M0 ( net1, cds_globals.vdd_, c);
+nfet M7 ( cds_globals.gnd_, net4, d);
+nfet M6 ( net4, y, c);
+nfet M5 ( cds_globals.gnd_, net2, b);
+nfet M4 ( net2, y, a);
+
+endmodule

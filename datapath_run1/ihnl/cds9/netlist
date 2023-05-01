@@ -1,0 +1,22 @@
+// Library - ece425mp2, Cell - q_register, View - schematic
+// LAST TIME SAVED: Apr  6 19:32:12 2023
+// NETLIST TIME: Apr  7 21:00:44 2023
+`timescale 1ns / 1ns 
+
+module q_register ( q, CLK, _CLK, d );
+
+output  q;
+
+input  CLK, _CLK, d;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp2";
+    specparam CDS_CELLNAME = "q_register";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+latch I1 ( q, net1, CLK);
+latch I0 ( net1, d, _CLK);
+
+endmodule

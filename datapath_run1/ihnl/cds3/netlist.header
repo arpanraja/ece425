@@ -1,0 +1,18 @@
+// Library - ece425mp2, Cell - MUX2-1, View - schematic
+// LAST TIME SAVED: Apr 30 15:11:14 2023
+// NETLIST TIME: May  1 11:52:16 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_3 ( y, _s, a, b, s );
+
+output  y;
+
+input  _s, a, b, s;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp2";
+    specparam CDS_CELLNAME = "MUX2-1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

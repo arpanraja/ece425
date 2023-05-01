@@ -1,0 +1,61 @@
+t 2 CLK input
+t 3 d input
+t 4 q output
+t 6 _CLK input
+n 1 gnd!
+n 0 vdd!
+n 2 /CLK
+n 3 /d
+n 4 /q
+n 5 /net1
+n 6 /_CLK
+n 8 /I1/net4
+n 10 /I1/net3
+n 11 /I1/net5
+; nfet Instance /I1/I1/0 = auLvs device Q0
+d nmos D G S B (p D S)
+i 0 nmos 10 2 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I1/I1/1 = auLvs device Q1
+d pmos D G S B (p D S)
+i 1 pmos 10 2 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I0/0 = auLvs device Q2
+i 2 nmos 8 5 1 1 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I1/I0/1 = auLvs device Q3
+i 3 pmos 8 5 0 0 " l 240e-9 w 2.88e-6 "
+; nmos Instance /I1/I52/N2 = auLvs device Q4
+i 4 nmos 8 2 11 1 " m 1 l 240e-9 "
+; pmos Instance /I1/I52/P3 = auLvs device Q5
+i 5 pmos 8 10 11 0 " m 1 l 240e-9 "
+; nfet Instance /I1/I51/I0/0 = auLvs device Q6
+i 6 nmos 11 4 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I1/I51/I0/1 = auLvs device Q7
+i 7 pmos 11 4 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I51/I1/0 = auLvs device Q8
+i 8 nmos 4 11 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I1/I51/I1/1 = auLvs device Q9
+i 9 pmos 4 11 0 0 " l 240e-9 w 720e-9 "
+n 36 /I0/net4
+n 38 /I0/net3
+n 39 /I0/net5
+; nfet Instance /I0/I1/0 = auLvs device Q10
+i 10 nmos 38 6 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I1/1 = auLvs device Q11
+i 11 pmos 38 6 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I0/0 = auLvs device Q12
+i 12 nmos 36 3 1 1 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I0/I0/1 = auLvs device Q13
+i 13 pmos 36 3 0 0 " l 240e-9 w 2.88e-6 "
+; nmos Instance /I0/I52/N2 = auLvs device Q14
+i 14 nmos 36 6 39 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I52/P3 = auLvs device Q15
+i 15 pmos 36 38 39 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I51/I0/0 = auLvs device Q16
+i 16 nmos 39 5 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I51/I0/1 = auLvs device Q17
+i 17 pmos 39 5 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I51/I1/0 = auLvs device Q18
+i 18 nmos 5 39 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I51/I1/1 = auLvs device Q19
+i 19 pmos 5 39 0 0 " l 240e-9 w 720e-9 "
+t 0 vdd! global
+t 1 gnd! global

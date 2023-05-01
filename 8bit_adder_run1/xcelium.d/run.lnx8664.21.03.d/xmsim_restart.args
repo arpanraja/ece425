@@ -1,0 +1,43 @@
+//
+// File created by:  xmxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/arpanr2/ece425.work/8bit_adder_run1/.simTmpNCCmd "
++mpssession+virtuoso742021
++mpshost+eceb-2022-25.ews.illinois.edu
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nocopyright
+-gui
+-input
+/home/arpanr2/ece425.work/8bit_adder_run1/.simTmpNCCmd
+-MPSSESSION
+virtuoso742021
+-MPSHOST
+eceb-2022-25.ews.illinois.edu
+-MESSAGES
++EMGRLOG
+simout.tmp
+-XLSTIME
+1677879905
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.21.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.21.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.21.03.d/hdl.var
+-XLNAME
+xmxlmode
+-XLVERSION
+"TOOL:	xmxlmode	21.03-s007"
+-XLNAME
+./xcelium.d/run.lnx8664.21.03.d/eceb-2022-25.ews.illinois.edu_802011

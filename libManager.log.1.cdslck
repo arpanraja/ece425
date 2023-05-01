@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      arpanr2
+HostName                       eceb-2022-44.ews.illinois.edu
+ProcessIdentifier              12626
+ProcessCreationTime_UTC        1682539188
+ProcessCreationTime_Readable   Wed Apr 26 14:59:48 2023 CDT
+AppIdentifier                  /software/cadence-2021-09/IC618/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/arpanr2/ece425.work/libManager.log.1
+TimeEditLocked                 Wed Apr 26 14:59:48 2023 CDT

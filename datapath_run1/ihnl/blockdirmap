@@ -1,0 +1,18 @@
+CADENCE IHNL111416
+
+ece425mp1 xor2 schematic cds0
+ece425mp2 add schematic cds1
+ece425mp2 logic schematic cds2
+ece425mp2 MUX2-1 schematic cds3
+ece425mp2 MUX3-1 schematic cds4
+ece425mp2 alu schematic cds5
+ece425mp2 latch schematic cds6
+ece425mp2 regbit schematic cds7
+ece425mp2 regfile schematic cds8
+ece425mp2 q_register schematic cds9
+ece425mp2 MUX4-1 schematic cds10
+ece425mp2 bitslice schematic cds11
+ece425mp2 datapath schematic cds12
+ece425mp1 inv schematic cds13
+ece425mp1 nand2 schematic cds14
+ece425mp1 nor2 schematic cds15

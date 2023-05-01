@@ -1,0 +1,34 @@
+// Library - ece425mp2, Cell - datapath, View - schematic
+// LAST TIME SAVED: Apr  7 21:09:48 2023
+// NETLIST TIME: Apr  7 21:09:59 2023
+`timescale 1ns / 1ns 
+
+module datapath ( c, f, p, q0_out, q3_out, y, _s0L, _s0Q, _s0R, _s0RS,
+     _s0SS, _s0ot, _s1L, _s1Q, _s1R, _s1RS, _s1SS, _sY, cin, cp, d,
+     f0_in, f3_in, inv_r, inv_s, lo, q0_in, q3_in, reg_wr, s0L, s0Q,
+     s0R, s0RS, s0SS, s0ot, s1L, s1Q, s1R, s1RS, s1SS, sY, select_a_hi,
+     select_b_hi );
+
+output  q0_out, q3_out;
+
+input  _s0L, _s0Q, _s0R, _s0RS, _s0SS, _s0ot, _s1L, _s1Q, _s1R, _s1RS,
+     _s1SS, _sY, cin, cp, f0_in, f3_in, inv_r, inv_s, lo, q0_in, q3_in,
+     reg_wr, s0L, s0Q, s0R, s0RS, s0SS, s0ot, s1L, s1Q, s1R, s1RS,
+     s1SS, sY;
+
+output [3:0]  f;
+output [3:0]  y;
+output [3:0]  c;
+output [3:0]  p;
+
+input [3:0]  d;
+input [15:0]  select_b_hi;
+input [15:0]  select_a_hi;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp2";
+    specparam CDS_CELLNAME = "datapath";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

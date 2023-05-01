@@ -1,0 +1,14 @@
+alu I1 ( cout, f, p, _s0L, _s0ot, _s1L, cin, inv_r, inv_s, net027,
+     net028, s0L, s0ot, s1L);
+regfile I0 ( net16, net15, cp, net13, select_a_hi[15:0],
+     select_b_hi[15:0], reg_wr);
+q_register I2 ( q, cp, net1, net2);
+inv I3 ( net1, cp);
+cdsModule_5 I9 ( net028, _s0SS, _s1SS, net16, net15, lo, q, s0SS,
+     s1SS);
+cdsModule_5 I4 ( net2, _s0Q, _s1Q, f, q, q_left, q_right, s0Q, s1Q);
+cdsModule_4 I7 ( net027, _s0RS, _s1RS, d, lo, net16, s0RS, s1RS);
+cdsModule_4 I6 ( net13, _s0R, _s1R, f_left, f_right, f, s0R, s1R);
+cdsModule_3 I10 ( y, _sY, f, net16, sY);
+
+endmodule

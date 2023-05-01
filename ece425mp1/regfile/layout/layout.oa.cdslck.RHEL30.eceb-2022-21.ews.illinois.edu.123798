@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      arpanr2
+HostName                       eceb-2022-21.ews.illinois.edu
+ProcessIdentifier              123798
+ProcessCreationTime_UTC        1682959666
+ProcessCreationTime_Readable   Mon May  1 11:47:46 2023 CDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/arpanr2/ece425.work/ece425mp1/regfile/layout/layout.oa.cdslck
+TimeEditLocked                 Mon May  1 11:54:18 2023 CDT

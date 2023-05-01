@@ -1,0 +1,18 @@
+// Library - ece425mp1, Cell - xor2, View - schematic
+// LAST TIME SAVED: Mar  2 17:44:42 2023
+// NETLIST TIME: Mar  3 12:12:10 2023
+`timescale 1ns / 1ns 
+
+module xor2 ( y, a, b );
+
+output  y;
+
+input  a, b;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp1";
+    specparam CDS_CELLNAME = "xor2";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

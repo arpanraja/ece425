@@ -1,0 +1,14 @@
+cellViewCounterTable = makeTable('cellViewCounterTableType nil)
+cellViewCounterTable['("ece425mp1" "full_adder" "schematic" )] =  359
+cellViewCounterTable['("NCSU_Analog_Parts" "pmos" "symbol" )] =  43
+cellViewCounterTable['("ece425mp1" "full_adder" "schematicSymbol" )] =  344
+cellViewCounterTable['("ece425mp1" "xor2" "schematicSymbol" )] =  90
+cellViewCounterTable['("ece425mp1" "8bit_adder" "schematic" )] =  1521
+cellViewCounterTable['("ece425mp1" "nand2" "schematicSymbol" )] =  88
+cellViewCounterTable['("ece425mp1" "nand2" "schematic" )] =  376
+cellViewCounterTable['("basic" "opin" "symbol" )] =  19
+cellViewCounterTable['("basic" "ipin" "symbol" )] =  19
+cellViewCounterTable['("basic" "vdd" "symbol" )] =  18
+cellViewCounterTable['("NCSU_Analog_Parts" "nmos" "symbol" )] =  42
+cellViewCounterTable['("basic" "gnd" "symbol" )] =  18
+cellViewCounterTable['("ece425mp1" "xor2" "schematic" )] =  719

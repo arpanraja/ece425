@@ -1,0 +1,25 @@
+// Library - ece425mp1, Cell - full_adder, View - schematic
+// LAST TIME SAVED: Mar  3 14:18:45 2023
+// NETLIST TIME: Mar  3 15:44:55 2023
+`timescale 1ns / 1ns 
+
+module full_adder ( carry, sum, a, b, c );
+
+output  carry, sum;
+
+input  a, b, c;
+
+
+specify 
+    specparam CDS_LIBNAME  = "ece425mp1";
+    specparam CDS_CELLNAME = "full_adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+xor2 I1 ( net1, a, b);
+xor2 I0 ( sum, net1, c);
+nand2 I4 ( carry, net4, net2);
+nand2 I3 ( net2, net1, c);
+nand2 I2 ( net4, a, b);
+
+endmodule

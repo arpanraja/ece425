@@ -1,0 +1,56 @@
+TOOL:	xmxlmode	21.03-s007: Started on Apr 07, 2023 at 21:10:15 CDT
+xmxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	/home/arpanr2/ece425.work/datapath_run1/testfixture.template
+	-f /home/arpanr2/ece425.work/datapath_run1/verilog.inpfiles
+		/home/arpanr2/ece425.work/ece425mp2/bitcell/functional/verilog.v
+		/software/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/nor2/functional/verilog.v
+		/software/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/nand2/functional/verilog.v
+		/software/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/inv/functional/verilog.v
+		/software/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos/functional/verilog.v
+		/software/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos/functional/verilog.v
+		/home/arpanr2/ece425.work/ece425mp2/tx_gate/functional/verilog.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		hdlFilesDir/cds_globals.v
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/arpanr2/ece425.work/datapath_run1/.simTmpNCCmd "
+	+mpssession+virtuoso385410
+	+mpshost+eceb-2022-04.ews.illinois.edu
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncvlogargs+ -neverwarn -nostdout -nocopyright ) is deprecated. Use (+xmvlogargs+ -neverwarn -nostdout -nocopyright ) instead.
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright) is deprecated. Use (+xmelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright) instead.
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/arpanr2/ece425.work/datapath_run1/.simTmpNCCmd ) is deprecated. Use (+xmsimargs+ -neverwarn  -nocopyright -gui -input /home/arpanr2/ece425.work/datapath_run1/.simTmpNCCmd ) instead.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /software/cadence-2021-09/XCELIUM2103/tools/xcelium/files/xmsimrc
+xcelium> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+xcelium> probe -create -shm test  -all   -depth 1
+Created probe 1
+xcelium> probe -create cds_globals -shm
+Created probe 2
+xcelium> probe -create -shm test.top2901._s0L test.top2901._s0Q test.top2901._s0R test.top2901._s0RS test.top2901._s0SS test.top2901._s0ot test.top2901._s1L test.top2901._s1Q test.top2901._s1R test.top2901._s1RS test.top2901._s1SS test.top2901._sY test.top2901.a test.top2901.b test.top2901.c test.top2901.cin test.top2901.cout test.top2901.cp test.top2901.d test.top2901.f test.top2901.f3 test.top2901.g_lo test.top2901.i test.top2901.inv_r test.top2901.inv_s test.top2901.lo test.top2901.oe test.top2901.ovr test.top2901.p test.top2901.p_lo test.top2901.q0 test.top2901.q0_data test.top2901.q3 test.top2901.q3_data test.top2901.ram0 test.top2901.ram3 test.top2901.reg_wr test.top2901.s0L test.top2901.s0Q test.top2901.s0R test.top2901.s0RS test.top2901.s0SS test.top2901.s0ot test.top2901.s1L test.top2901.s1Q test.top2901.s1R test.top2901.s1RS test.top2901.s1SS test.top2901.sY test.top2901.select_a_hi test.top2901.select_b_hi test.top2901.y test.top2901.y_data test.top2901.z
+Created probe 3
+xcelium> run
+Simulation complete via $finish(1) at time 100 NS + 0
+./testfixture.verilog:79 #10 $finish;
+xcelium> 

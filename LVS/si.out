@@ -1,0 +1,91 @@
+@(#)$CDS: LVS version 6.1.8-64b 08/17/2021 19:16 (cpgsrv12) $
+
+Command line: /software/cadence-2021-09/IC618/tools.lnx86/dfII/bin/64bit/LVS -dir /home/arpanr2/ece425.work/LVS -l -s -t /home/arpanr2/ece425.work/LVS/layout /home/arpanr2/ece425.work/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/arpanr2/ece425.work/LVS/layout/netlist
+       count
+        13              nets
+        6               terminals
+        10              pmos
+        10              nmos
+
+    Net-list summary for /home/arpanr2/ece425.work/LVS/schematic/netlist
+       count
+        13              nets
+        6               terminals
+        10              pmos
+        10              nmos
+
+
+    Terminal correspondence points
+    N10       N2        CLK
+    N9        N6        _CLK
+    N8        N3        d
+    N7        N1        gnd!
+    N12       N4        q
+    N11       N0        vdd!
+
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  20      20     
+        total                   20      20     
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  13      13     
+        total                   13      13     
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   6       6      
+
+
+Probe files from /home/arpanr2/ece425.work/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/arpanr2/ece425.work/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

@@ -1,0 +1,350 @@
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Sample .simrc file for new user.  [ Date modified: 1/96 ]     
+;
+; This file is used for customizing simulation runs. It enables designers 
+; to selectively override the contents of si.env file, and set defaults for
+; simulation variables which affect only their own simulations. It is a way to
+; set defaults on a per-user or per-system basis without affecting any other
+; designer. The file is optional and is loaded only if it exists, and can be
+; in encripted or non-encripted form.
+;
+; Here's an example of some Opus/Amadeus SE variables that you can define.
+; This file may NOT work as it is. You may need to comment out some lines or
+; uncomment out others to fit your simulation environment.
+;
+;###################################################################
+;#                                                                 #
+;# This file is read by the program <Install_dir>/bin/si           #
+;# in order to customize the program. The flowchart shows          #
+;# how "si" reads the files in 4.4:                                #
+;#                                                                 #
+;#  Read the simulation environment file "si.env". The path        #
+;#  of the file would be:                                          #
+;#         <simulation run directory>/si.env                       #
+;#                     |                                           #
+;#                     |                                           #
+;#  Read ".simrc" file. "si" will look for the file in the         #
+;#  following order till it is found:                              #
+;#    o Look for environment variable SIMRC, the value             #
+;#      of which is the directory the file resides. The            #
+;#      file path would then be: "$SIMRC/.simrc".                  #
+;#                                                                 #
+;#    o Look for environment variable ossSimUserSiDir, the         #
+;#      value of which is the directory the file resides.          #
+;#      The file path would then be: "$ossSimUserSiDir/.simrc".              #
+;#                                                                 #
+;#    o Look for the file in local directory. The path             #
+;#      of the file would be:                                      #
+;#          <Install-dir>/local/.simrc                             #
+;#                                                                 #
+;#    o Look for the file in the users home directory. The         #
+;#      path of the file would be: ~/.simrc                        #
+;#                      |                                          #
+;#                      |                                          #
+;#  Read optional si.local file from the simulation run directory. #
+;#  This is looked for only if command option is specified to the  #
+;#  SI program. The path of the file would be:                     #
+;#     "<simulation run directory>/si.local"                       #
+;#                      |                                          #
+;#                      |                                          #
+;#  Load the simcap.il file. The path of the file would be:        #
+;#      <Install-dir>/local/[si,hnl or fnl]/simcap.il" or          #
+;#      <Install-dir>/etc/skill/[si, hnl or fnl]/simcap.il"        #
+;#                      |                                          #
+;#                      |                                          # 
+;#  Load the simulator specific SE customization file. The         #
+;#  file name would generally be "<simulator>.il" or               #
+;#  "<simulator>.ile" The command to load the file would be in     #
+;#  simcap.il file. The directory where the file would be is:      #
+;#       "<Install-dir>/local/si/caplib" or                        #
+;#       "<Install-dir>/etc/skill/si/caplib"                       #
+;#                                                                 #
+;###################################################################
+;
+; Note: Do not use the character "." or "~" in this file, instead
+; type in a full path name to programs. These are special characters
+; that are interpreted by the program "/bin/csh". However, the program
+; that reads this file is "si".
+;
+; This file has already been translated from Edge 2.1 with the commands:
+;
+;   <unix> cd 
+;   <unix> mv .simrc .simrc.edge
+;   <unix> /cds/bin/skilltrans -f /cds/etc/trans/framework.tr \
+;      .simrc.edge > .simrc
+;
+; ----------------------------------------
+; SE/IL functions may also be defined here.
+;
+; Be careful in this file - these values now OVERRIDE the values located in
+; your <run>/si.env file. This is a change from SE in Edge where "~/.simrc"
+; was loaded BEFORE the "<run>/si.env". Therefore, you may specify values
+; through the menu item "Options...", only to have the SE override their values
+; with THIS file! Your log file "si.log" will tell you if any SE defaults have
+; been overriden. "si.foreground.log" would be the log file if run in
+; foreground.. 
+;
+; If an SE variable has a value of "t" or "nil", you only need to set it to
+; "t" to override the default SE behaviour. A "nil" will be ignored by the
+; system (it goes with its default of nil).
+;
+; For FNL netlisting, the output formatting instructions are stored as property 
+; property values with fixed names stored in the database global cellView
+; called "nlpglobals". These instructions refer to other properties defined on 
+; the library elements (primitive views of the simulator), or skill procedures
+; that format the output for devices. Global default format instructions can
+; also be added to the properties on the global cellview.
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; generic variables
+;
+; Note that the name "basic" is a logical or relative name. Don't type in
+; a full Unix pathname to the library, just its normal 4.4 name. To actually
+; find the library "basic", the system uses the library search path that may
+; be defined in the file "cds.lib".
+;simNlpGlobalLibName  = "basic"
+
+;Note: Analog Artist users should use the following:                        
+;simNlpGlobalLibName  = "analogLib"
+
+; The normal default for simTimeUnit is 1 nanosecond. For the GaCells 0.6 micro
+; library, we'll use a simulation resolution of 10 picosecond for the parts.
+; Note that this value (10.0e-12) must be consistent with the value used by
+; your STL input.stl file (in the "deftiming" statement) and your library HDL
+; description files (for proper operation of the SDF Annotator).
+; simTimeUnit                = 10.0e-12
+;
+; Using a 10ps internal precision for the Verilog simulator.
+;simVerilogTimePrecisionVar  = simTimeUnit
+simCapUnit   = 1.0e-15
+
+;simNlpGlobalCellName = "nlpglobals"
+
+; simNetlistHier     = nil
+; simCapFileDir      = "/tmp/test/sim.cap"
+; simModelNamePrefix = "Model"
+
+simDoPostLayout      = t
+
+; "simRetainFterms" is used with the "addDummy()" routine 
+; in order to use Cell-Ensemble on a macro block.
+simRetainFterms = t
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for hspice
+
+hspiceSimViewList   = '("hspice" "schematic" "symbol")
+hspiceSimStopList   = '("hspice" "symbol")
+; hspiceSimStopList = '("hspice")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for spice
+
+spiceSimViewList   = '("spice" "schematic" "symbol")
+spiceSimStopList   = '("spice" "symbol")
+; spiceSimStopList = '("spice_l6" "symbol")
+
+; for scoap
+; scoapSimStopList = '("scoap")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for PRFlatten, used to generate autoLayout before Place & Route
+
+flattenSimViewList = '("abstract" "schematic"
+                       "functional" "behavioral" "system" "symbol")
+flattenSimStopList = '("abstract" "symbol")
+; Will create a cellView called "autoLayout" when running PRFlatten.
+simFlatViewName  = "autoLayout"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for lvs
+
+;;;;;;;;;;;;;;;;;;;;;;;
+; for PDCompare or DIVA
+
+; lvs       = control the depth of the netlisting
+; extracted = useful for hierarchically-extracted reps
+; abstract  = useful for ASIC P&R extraction
+; symbol    = useful for custom layout extraction
+
+;;;;;;;;;;;;;;;;;;;;;
+; for transistor-level comparison
+
+lvsSchematicViewList = '( "lvs" "schematic" "gate_sch" "cmos_sch" )
+lvsLayoutViewList    = '( "lvs" "extracted" "schematic" "gate_sch" "cmos_sch" )
+lvsLayoutStopList    = '( "lvs" )
+lvsSchematicStopList = '( "lvs" )
+
+;;;;;;;;;;;;;;;;;;;;
+; for transistor-level comparison for analog artist                        
+
+;lvsSchematicViewList = '( "auLvs" "schematic" "gate_sch" "cmos_sch" )    
+;lvsLayoutViewList = '( "auLvs" "extracted" "schematic" "gate_sch" "cmos_sch")
+;lvsLayoutStopList    = '( "auLvs" )                                        
+;lvsSchematicStopList = '( "auLvs" )                                        
+
+;;;;;;;;;;;;;;;;;;;;;
+; for macro-cell comparison
+
+; lvsSchematicViewList = '( "abstract" "schematic" "gate_sch" )
+; lvsLayoutViewList    = '( "abstract" "extracted" )
+; lvsLayoutStopList    = '( "abstract" )
+; lvsSchematicStopList = '( "abstract" )
+
+;;;;;;;;;;;;;;;;;;;;;;
+; for symbolic checker
+
+; lvsLayoutViewList    = '( "symlvs" "lvs" "schematic" "symbolic" )
+; lvsSchematicViewList = '( "symlvs" "lvs" "schematic" "gate_sch" "cmos_sch" )
+; lvsLayoutStopList    = '( "symlvs" "lvs" )
+; lvsSchematicStopList = '( "symlvs" "lvs" )
+
+;;;;;;;;;;;;;;;;;;;;;;                                                       
+; for symbolic checker for analog artist                                     
+
+; lvsLayoutViewList    = '( "symlvs" "auLvs" "schematic" "symbolic" )        
+; lvsSchematicViewList = '( "symlvs" "auLvs" "schematic" "gate_sch" "cmos_sch" )
+; lvsLayoutStopList    = '( "symlvs" "auLvs" )                               
+; lvsSchematicStopList = '( "symlvs" "auLvs" )                               
+
+ercViewList = '( "lvs" "schematic" "gate_sch" "cmos_sch" )
+ercStopList = '( "lvs" )
+
+;;;;;;;;;;;;;;;;;;;;;;                                                       
+; for erc in analog artist                                                   
+;ercViewList = '( "auLvs" "schematic" "gate_sch" "cmos_sch" )                  
+;ercStopList = '( "auLvs" )                                                    
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for interactive simulation environment
+;
+; To run remote Verilog interactively, mount the /tmp directory of the remote
+; machine to your local machine /remotetmp directory. In this file, set:
+; iseRemoteDiskMountedAs = "/remotetmp"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for verilog
+;
+; simVerilogRestartSimulationFile = ""
+
+;*****************************************************************************
+;initialization for netlister
+;*****************************************************************************
+simVerilogFlattenBuses           = 'nil
+simVerilogLaiLmsiNetlisting      = 'nil
+simReNetlistAll                  = 't
+simVerilogNetlistExplicit        = 'nil
+simVerilogPwrNetList             = '("vdd!" "VDD!" "PWR!" "VCC!")
+simVerilogGndNetList             = '("gnd!" "GND!")
+
+verilogSimStopList = 
+  '("verilog" "pld_verilog" "lai_verilog" "lmsi_verilog" "symbol" )
+
+verilogSimViewList = 
+  '("behavioral" "functional" "system" "verilog" "pld_verilog" "lai_verilog" "lmsi_verilog"  "schematic" "symbol" )
+
+; The default top level module name and the instance name.
+; simVerilogTopLevelModuleName = "test.top"
+
+;*****************************************************************************\
+;initialization for verilog command line arguments
+;
+; Do not set the verilog_Integ  variable "verilogSimBinary" with C-shell syntax
+; like "~/verilog". Rather, use the full path name in order for SE to find your
+; Verilog engine.
+;*****************************************************************************/
+; verilogSimBinary                 = prependInstallPath( "bin/verilog.exe" )
+; verilogSimBinary		 = prependInstallPath( "../bin/verilog" )
+verilogSimBinary		= "/apps/SunOS/cadence-2003/LDV41/tools/bin/verilog"
+
+; simVerilogPasswordFile         = prependInstallPath( "etc/license/verilog.vc" )
+simVerilogLibraryDirectory       = ""
+simVerilogLibraryFile            = ""
+; Examples of possible invocation options
+
+;simVerilogInvocationOptions      = " -a -w +db +define+SYNTH +dlverbose +dslookc +laiexe +laidlddebug +libext+.v +maxdelays +max_err_count+5 +mconst +sdf_verbose +tms+ "
+
+simVerilogInteractiveCommandFile = ""
+simVerilogInvocationOptionsFile  = ""
+
+; Post-layout simulation variables.
+;
+; The value "nil" of simVerilogDelayPrimitive means that the Cadence default 
+; delay calculator used is $dcalc_path(..., "net.cap"). If the value is "t", the
+; task dcalc_prim(..., "net.cap") will show up in the Run Directory
+; file "delayTask.cmd".
+;
+; For delay paths to be back-annotated:
+; Note 1: Cell ports are scalars.
+; Note 2: Port names are the same as their net names.
+; Note 3: No wired logic on a output port.
+;
+simVerilogDelayPrimitive    = nil
+; The report info goes into the file "si.out", and contains information
+; on the interconnect nets.
+simVerilogDelayDetailReport = t
+simVerilogDelayUseDefault   = t
+
+
+/*****************************************************************************\
+ initialization for waveform display tool
+\*****************************************************************************/
+;simVerilogWavePackageVar         = "cWaves"
+simVerilogWavePackageVar         = "Simvision"
+
+
+/*****************************************************************************\
+ initialization for pld solution
+\*****************************************************************************/
+   if( isDir( prependInstallPath( "etc/amAbel4" ) )
+   then simVerilogLibraryFile = prependInstallPath( "etc/amAbel4/pldlib.v" )
+   )
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; .simrc for Veritime
+
+; The value of simVeritimeTopLevelModuleName is hard-coded to be the
+; string "vttest.vttop". This restriction will be relaxed in the 4.3 release.
+;simVeritimeTopLevelModuleName      = "vttest.vttop"
+         
+;The -default- association of the instance of the symbol on the 
+;schematic design with the corresponding simulator or schematic primitive.
+;veritimeSimViewList = '( "functional" "hdl" "schematicl" "schematic" "symbol")
+         
+;The -default- search path list for the appropriate target 
+;Veritime description of the symbol.
+;veritimeSimStopList = '( "functional" "behavioral" "system" "symbol")
+         
+;The -default- Veritime executable in the hierarchy.
+;veritimeSimBinary  = prependInstallPath("bin/veritime")
+         
+;A file of command line options invoked using the -f option. 
+;simVeritimeInvocationOptionsFile = "<veritime/passcode_file>"
+         
+;Veritool path-directory of library models invoked by the -y option.
+;simVeritimeLibraryDirectory = "<ASIC_or_PCB_libraries_path_dir>" 
+         
+;Veritool path-file of library models (usually UDP's) ;invoked by the -v option.
+;simVeritimeLibraryFile = "<ASIC_or_PCB_UDP_libraries_path_file>" 
+        
+;Initialization options or a list of commands invoked by -i which will 
+;run upon Veritime invocation.
+;simVeritimeInteractiveCommandFile = "<your Veritime startup batch path-name>"
+         
+;Additional invocation options to be used in the Veritime invocation
+;in the Veritime window. 
+;simVeritimeInvocationOptions = "+libext+.v+ -p<passcode>\
+                                 +global_loops+15 +delay_mode_veritime\
+                                 +libverbose +time_scale1.000000e-09"
+         
+;Setting this variable to nil eliminates Path Display errors for
+;schematics where there are terminals labelled differently than the
+;wires they connect to. However, this slows it down significantly.
+;vtiWireLabelToTermNameFlag = nil
+
+; STL
+; simDiffInputFile = "simdiff.stl"

@@ -1,0 +1,10 @@
+# File Created by arpanr2 at Fri Jan 27 20:10:26 2023
+# assisted by CdsLibEditor
+DEFINE basic /software/cadence-2021-09/IC618/tools.lnx86/dfII/etc/cdslib/basic
+DEFINE US_8ths /software/cadence-2021-09/IC618/tools.lnx86/dfII/etc/cdslib/sheets/US_8ths
+DEFINE analogLib /software/cadence-2021-09/IC618/tools.lnx86/dfII/etc/cdslib/artist/analogLib
+DEFINE sample /software/cadence-2021-09/IC618/tools.lnx86/dfII/samples/cdslib/sample
+DEFINE TTL_tutor TTL_tutor
+DEFINE master master
+DEFINE tutorial tutorial
+DEFINE user_ASIC user_ASIC

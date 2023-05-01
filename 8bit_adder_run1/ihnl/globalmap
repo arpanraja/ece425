@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+ece425mp1/xor2/schematic xor2
+ece425mp1/nand2/schematic nand2
+ece425mp1/8bit_adder/schematic ece425mp1_8bit_adder_schematic
+ece425mp1/full_adder/schematic full_adder
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

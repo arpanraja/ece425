@@ -1,0 +1,59 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "datapath"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/arpanr2/ece425.work/datapath_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "select_a_hi" 15 0  "select_a_hi" 15 0  )
+( "select_b_hi" 15 0  "select_b_hi" 15 0  )
+( "p" 3 0  "p" 3 0  )
+( "c" 3 0  "c" 3 0  )
+( "y" 3 0  "y" 3 0  )
+( "f" 3 0  "f" 3 0  )
+( "d" 3 0  "d" 3 0  )
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "ece425mp2/MUX3-1/schematic" "cdsModule_4" )
+( "ece425mp2/MUX4-1/schematic" "cdsModule_5" )
+( "ece425mp2/alu/schematic" "alu" )
+( "ece425mp2/MUX2-1/schematic" "cdsModule_3" )
+( "ece425mp2/bitslice/schematic" "bitslice" )
+( "ece425mp2/regfile/schematic" "regfile" )
+( "ece425mp2/logic/schematic" "logic" )
+( "ece425mp2/latch/schematic" "latch" )
+( "ece425mp1/xor2/schematic" "xor2" )
+( "ece425mp2/datapath/schematic" "datapath" )
+( "ece425mp2/add/schematic" "add" )
+( "ece425mp2/q_register/schematic" "q_register" )
+( "ece425mp2/regbit/schematic" "regbit" )
+ )
+( "datapath" "ihnl/cds12/map" )
+( "bitslice" "ihnl/cds11/map" )
+( "cdsModule_4" "ihnl/cds4/map" )
+( "regbit" "ihnl/cds7/map" )
+( "logic" "ihnl/cds2/map" )
+( "q_register" "ihnl/cds9/map" )
+( "cdsModule_3" "ihnl/cds3/map" )
+( "add" "ihnl/cds1/map" )
+( "xor2" "ihnl/cds0/map" )
+( "latch" "ihnl/cds6/map" )
+( "regfile" "ihnl/cds8/map" )
+( "cdsModule_5" "ihnl/cds10/map" )
+( "alu" "ihnl/cds5/map" )
+ )

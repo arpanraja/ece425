@@ -1,0 +1,14 @@
+version {data 2.0}
+comment {data {simcompare(64) 21.03-s007 Fri Mar  3 15:48:13 2023}}
+database {logicalname g pathname /class/ece425/mp1/adder_8bit_run1/shm.db/shm.db.trn fullpathname {"/class/ece425/mp1/adder_8bit_run1/shm.db/shm.db.dsn"::} originalpathname {} precision -9 displayprecision -9}
+database {logicalname t pathname /home/arpanr2/ece425.work/8bit_adder_run1/shm.db/shm.db.trn fullpathname {"/home/arpanr2/ece425.work/8bit_adder_run1/shm.db/shm.db.dsn"::} originalpathname {} precision -9 displayprecision -9}
+parameters {precision -9 displayprecision -9 maxerrors 10 totalerrors 100 sequencetime no numerrors 0 gdblogname g tdblogname t}
+compare {type compare name c1 hierarchical yes objectypes {signals streams} state completed status success command {compare . -start 0ns -end 100ns -pos 2ns -neg 2ns -maxerrors 200} goldendbname g testdbname t depth 0 summarycounts {totalcompares 10 compsets 8 analysiswithnoerrors 8 completioncode 0} lineno 13 dbs {g t} compstyle df totalerrcount 0 maxerrors 200 totalerrors 100 stime 0ns etime 100ns ptol 2ns ntol 2ns ignoreundefined neither ignoreunknown neither attrcompare 1 relcompare 1 comparebe 0}
+cset {name c1:cds_globals.gnd_ compname c1 simplename c1:sc1 compstyle tb objecttype expr gexpr cds_globals.gnd_ texpr cds_globals.gnd_ compcount 1 compstate completed comparestatus success}
+cset {name c1:cds_globals.vdd_ compname c1 simplename c1:sc2 compstyle tb objecttype expr gexpr cds_globals.vdd_ texpr cds_globals.vdd_ compcount 1 compstate completed comparestatus success}
+cset {name {c1:test.a[7:0]} compname c1 simplename c1:sc3 compstyle tb objecttype expr gexpr {test.a[7:0]} texpr {test.a[7:0]} compcount 1 compstate completed comparestatus success}
+cset {name {c1:test.b[7:0]} compname c1 simplename c1:sc4 compstyle tb objecttype expr gexpr {test.b[7:0]} texpr {test.b[7:0]} compcount 2 compstate completed comparestatus success}
+cset {name c1:test.cin compname c1 simplename c1:sc5 compstyle tb objecttype expr gexpr test.cin texpr test.cin compcount 1 compstate completed comparestatus success}
+cset {name c1:test.cout compname c1 simplename c1:sc6 compstyle tb objecttype expr gexpr test.cout texpr test.cout compcount 1 compstate completed comparestatus success}
+cset {name {c1:test.i[16:0]} compname c1 simplename c1:sc7 compstyle tb objecttype expr gexpr {test.i[16:0]} texpr {test.i[16:0]} compcount 2 compstate completed comparestatus success}
+cset {name {c1:test.sum[7:0]} compname c1 simplename c1:sc8 compstyle tb objecttype expr gexpr {test.sum[7:0]} texpr {test.sum[7:0]} compcount 1 compstate completed comparestatus success}

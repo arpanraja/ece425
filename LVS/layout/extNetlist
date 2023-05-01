@@ -1,0 +1,83 @@
+t 10 CLK input
+t 9 _CLK input
+t 8 d input
+t 7 gnd! output
+t 12 q output
+t 11 vdd! output
+
+n 0 /13
+n 1 /12
+n 2 /11
+n 3 /10
+n 4 /9
+n 5 /8
+n 6 /7
+n 7 /gnd!
+n 8 /d
+n 9 /_CLK
+n 10 /CLK
+n 11 /vdd!
+n 12 /q
+
+; pmos4 Instance /+19 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 11 12 0 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+18 = auLvs device Q1
+i 1 pmos 11 0 12 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+17 = auLvs device Q2
+i 2 pmos 0 1 2 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+16 = auLvs device Q3
+i 3 pmos 1 10 11 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+15 = auLvs device Q4
+i 4 pmos 2 3 11 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+14 = auLvs device Q5
+i 5 pmos 11 3 4 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+13 = auLvs device Q6
+i 6 pmos 11 4 3 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+12 = auLvs device Q7
+i 7 pmos 4 5 6 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+11 = auLvs device Q8
+i 8 pmos 5 9 11 11 " m 1 l 240e-9 w 720e-9 "
+
+; pmos4 Instance /+10 = auLvs device Q9
+i 9 pmos 6 8 11 11 " m 1 l 240e-9 w 720e-9 "
+
+; nmos4 Instance /+9 = auLvs device Q10
+d nmos D G S B (p D S)
+i 10 nmos 7 12 0 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+8 = auLvs device Q11
+i 11 nmos 7 0 12 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+7 = auLvs device Q12
+i 12 nmos 0 10 2 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+6 = auLvs device Q13
+i 13 nmos 1 10 7 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+5 = auLvs device Q14
+i 14 nmos 2 3 7 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+4 = auLvs device Q15
+i 15 nmos 7 3 4 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+3 = auLvs device Q16
+i 16 nmos 7 4 3 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+2 = auLvs device Q17
+i 17 nmos 4 9 6 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+1 = auLvs device Q18
+i 18 nmos 5 9 7 7 " m 1 l 240e-9 w 360e-9 "
+
+; nmos4 Instance /+0 = auLvs device Q19
+i 19 nmos 6 8 7 7 " m 1 l 240e-9 w 360e-9 "
+
