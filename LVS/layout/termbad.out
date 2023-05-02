@@ -1,0 +1,23 @@
+T /+5   G /reg_wr
+? Terminal "G" on device /+5  should be connected to /223 instead of /reg_wr
+T /+940 G /reg_wr
+? Terminal "G" on device /+940 should be connected to /223 instead of /reg_wr
+T /+22  G /reg_wr
+? Terminal "G" on device /+22 should be connected to /q3_out instead of /reg_wr
+T /+959 G /reg_wr
+? Terminal "G" on device /+959 should be connected to /q3_out instead of /reg_wr
+? Terminal _s0Q's type in the layout: jumper, in the schematic: input
+T -1  _s0ot /_s0ot
+? Terminal _s0ot in the layout failed to match any terminal in the schematic.
+? Terminal _s1Q's type in the layout: jumper, in the schematic: input
+? Terminal c<0>'s type in the layout: input, in the schematic: output
+? Terminal cp's type in the layout: jumper, in the schematic: input
+T -1  q0 /q0
+? Terminal q0 in the layout is not present in the schematic.
+? Terminal q3_out's type in the layout: input, in the schematic: output
+T -1  reg_wr /reg_wr
+? Terminal reg_wr in the layout failed to match any terminal in the schematic.
+? Terminal s0Q's type in the layout: jumper, in the schematic: input
+T -1  s0ot /s0ot
+? Terminal s0ot in the layout failed to match any terminal in the schematic.
+? Terminal s1Q's type in the layout: jumper, in the schematic: input

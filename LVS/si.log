@@ -7,17 +7,17 @@ INFO (TECH-150003): The technology database "NCSU_TechLib_tsmc03d" has been auto
 updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 
 
-Begin netlist:    May  1 22:48:48 2023
+Begin netlist:    May  2 00:29:41 2023
 	view name list	= ("auLvs" "extracted")
 	stop name list	= ("auLvs")
 	library name	= "ece425mp2"
-	cell name	= "bitslice"
+	cell name	= "datapath"
 	view name	= "extracted"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 Loading hnlInit.cxt 
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    May  1 22:48:48 2023
+End netlist:    May  2 00:29:41 2023
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -26,20 +26,20 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	268 nodes merged into 268 nodes
+	871 nodes merged into 871 nodes
 
 
-Begin netlist:    May  1 22:48:48 2023
+Begin netlist:    May  2 00:29:41 2023
 	view name list	= ("auLvs" "cmos_sch" "schematic" "symbol")
 	stop name list	= ("auLvs")
 	library name	= "ece425mp2"
-	cell name	= "bitslice"
+	cell name	= "datapath"
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    May  1 22:48:49 2023
+End netlist:    May  2 00:29:42 2023
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -48,36 +48,38 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	1034 nodes merged into 1034 nodes
+	4229 nodes merged into 4229 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    May  1 22:48:49 2023
+Begin comparison:    May  2 00:29:43 2023
 @(#)$CDS: LVS version 6.1.8-64b 08/17/2021 19:16 (cpgsrv12) $
 
-The net-lists match.
+3 net-list ambiguities were resolved by random selection.
+
+The net-lists failed to match.
 
                              layout  schematic
                                 instances
-        un-matched              0       0      
-        rewired                 0       0      
+        un-matched              7       7      
+        rewired                 4       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  470     470    
-        total                   470     470    
+        active                  1880    1880   
+        total                   1880    1880   
 
                                   nets
-        un-matched              0       0      
-        merged                  0       0      
+        un-matched              9       7      
+        merged                  1       0      
         pruned                  0       0      
-        active                  268     268    
-        total                   268     268    
+        active                  871     868    
+        total                   871     868    
 
                                 terminals
-        un-matched              0       0      
+        un-matched              4       8      
         matched but
-        different type          0       0      
-        total                   74      74     
-End comparison:      May  1 22:48:49 2023
+        different type          7       7      
+        total                   84      90     
+End comparison:      May  2 00:29:43 2023
 
 
 Comparison program completed successfully.

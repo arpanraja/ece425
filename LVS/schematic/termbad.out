@@ -1,0 +1,23 @@
+? Terminal _s0Q's type in the schematic: input, in the layout: jumper
+T -1  _s0RS /_s0RS
+? Terminal _s0RS in the schematic is not present in the layout.
+T -1  _s0ot /_s0ot
+? Terminal _s0ot in the schematic failed to match any terminal in the layout.
+? Terminal _s1Q's type in the schematic: input, in the layout: jumper
+T -1  _s1RS /_s1RS
+? Terminal _s1RS in the schematic is not present in the layout.
+? Terminal c<0>'s type in the schematic: output, in the layout: input
+? Terminal cp's type in the schematic: input, in the layout: jumper
+T -1  q0_out /q0_out
+? Terminal q0_out in the schematic is not present in the layout.
+? Terminal q3_out's type in the schematic: output, in the layout: input
+T -1  reg_wr /reg_wr
+? Terminal reg_wr in the schematic failed to match any terminal in the layout.
+? Terminal s0Q's type in the schematic: input, in the layout: jumper
+T -1  s0RS /s0RS
+? Terminal s0RS in the schematic is not present in the layout.
+T -1  s0ot /s0ot
+? Terminal s0ot in the schematic failed to match any terminal in the layout.
+? Terminal s1Q's type in the schematic: input, in the layout: jumper
+T -1  s1RS /s1RS
+? Terminal s1RS in the schematic is not present in the layout.
