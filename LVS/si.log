@@ -1,4 +1,4 @@
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.04s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.05s.
 Loading /home/arpanr2/ece425.work/.simrc file.
 
 Running simulation in directory: "/home/arpanr2/ece425.work/LVS".
@@ -7,7 +7,7 @@ INFO (TECH-150003): The technology database "NCSU_TechLib_tsmc03d" has been auto
 updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 
 
-Begin netlist:    May  2 01:25:40 2023
+Begin netlist:    May  2 11:35:56 2023
 	view name list	= ("auLvs" "extracted")
 	stop name list	= ("auLvs")
 	library name	= "ece425mp2"
@@ -17,7 +17,7 @@ Begin netlist:    May  2 01:25:40 2023
 Running Artist Flat Netlisting ...
 Loading hnlInit.cxt 
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    May  2 01:25:41 2023
+End netlist:    May  2 11:35:57 2023
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -26,10 +26,10 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	873 nodes merged into 873 nodes
+	868 nodes merged into 868 nodes
 
 
-Begin netlist:    May  2 01:25:41 2023
+Begin netlist:    May  2 11:35:57 2023
 	view name list	= ("auLvs" "cmos_sch" "schematic" "symbol")
 	stop name list	= ("auLvs")
 	library name	= "ece425mp2"
@@ -39,7 +39,7 @@ Begin netlist:    May  2 01:25:41 2023
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    May  2 01:25:42 2023
+End netlist:    May  2 11:35:58 2023
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -51,16 +51,14 @@ Removing parasitic components from netlist
 	4229 nodes merged into 4229 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    May  2 01:25:42 2023
+Begin comparison:    May  2 11:35:58 2023
 @(#)$CDS: LVS version 6.1.8-64b 08/17/2021 19:16 (cpgsrv12) $
 
-1 net-list ambiguity was resolved by random selection.
-
-The net-lists failed to match.
+The net-lists match.
 
                              layout  schematic
                                 instances
-        un-matched              12      12     
+        un-matched              0       0      
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
@@ -68,18 +66,18 @@ The net-lists failed to match.
         total                   1880    1880   
 
                                   nets
-        un-matched              5       3      
-        merged                  3       0      
+        un-matched              0       0      
+        merged                  0       0      
         pruned                  0       0      
-        active                  873     868    
-        total                   873     868    
+        active                  868     868    
+        total                   868     868    
 
                                 terminals
-        un-matched              2       2      
+        un-matched              0       0      
         matched but
         different type          0       0      
         total                   90      90     
-End comparison:      May  2 01:25:42 2023
+End comparison:      May  2 11:35:58 2023
 
 
 Comparison program completed successfully.

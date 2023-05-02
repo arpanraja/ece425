@@ -1,4 +1,0 @@
-T -1  q0_out /q0_out
-? Terminal q0_out in the layout failed to match any terminal in the schematic.
-T -1  q3_out /q3_out
-? Terminal q3_out in the layout failed to match any terminal in the schematic.
