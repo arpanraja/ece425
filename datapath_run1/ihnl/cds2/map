@@ -3,6 +3,4 @@
 ( "nand" "nand_" )
 ( "nor" "nor_" )
  )
-( "nor2" "nor22" )
-( "nand2" "nand20" )
  )

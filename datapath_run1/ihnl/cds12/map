@@ -61,4 +61,7 @@
 ( "d<0>" "d[0]" )
 ( "select_a_hi<15>" "select_a_hi[15]" )
  )
+( "MUX4-1" "cdsModule_14" )
+( "MUX3-1" "cdsModule_13" )
+( "MUX2-1" "cdsModule_12" )
  )

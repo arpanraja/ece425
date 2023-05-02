@@ -1,0 +1,10 @@
+simVerilogNetlistFileList = '((("edits" "MUX2-1") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("edits")
+simVerilogNetlistFileCellList = '(("edits" 
+	("MUX2-1")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

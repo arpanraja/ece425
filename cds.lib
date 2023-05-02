@@ -15,3 +15,6 @@ DEFINE NCSU_TechLib_tsmc03d $CDK_DIR/lib/NCSU_TechLib_tsmc03d
 DEFINE NCSU_TechLib_tsmc04_4M2P $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
 DEFINE ece425mp1 /home/arpanr2/ece425.work/ece425mp1
 DEFINE ece425mp2 /home/arpanr2/ece425.work/ece425mp2
+#Removed by ddDeleteObj: DEFINE ece425mp2edits /home/arpanr2/ece425.work/ece425mp2edits
+#Removed by ddDeleteObj: DEFINE ece425mp2editsreal /home/arpanr2/ece425.work/ece425mp2editsreal
+DEFINE edits /home/arpanr2/ece425.work/edits

@@ -1,6 +1,6 @@
 // Library - ece425mp2, Cell - add, View - schematic
-// LAST TIME SAVED: May  1 00:33:35 2023
-// NETLIST TIME: May  1 11:52:16 2023
+// LAST TIME SAVED: May  1 16:09:53 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module add ( cout, sum, cin, gen_lo, kill_hi, prop_hi );

@@ -1,9 +1,9 @@
 // Library - ece425mp2, Cell - MUX2-1, View - schematic
 // LAST TIME SAVED: Apr 30 15:11:14 2023
-// NETLIST TIME: May  1 11:52:16 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
-module cdsModule_3 ( y, _s, a, b, s );
+module cdsModule_12 ( y, _s, a, b, s );
 
 output  y;
 
@@ -16,5 +16,8 @@ specify
     specparam CDS_VIEWNAME = "schematic";
 endspecify
 
+nand2 I5 ( net1, b, s);
+nand2 I7 ( y, net1, net3);
+nand2 I6 ( net3, _s, a);
 
 endmodule

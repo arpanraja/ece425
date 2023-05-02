@@ -1,0 +1,23 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  y;
+
+reg  _s, a, b, s;
+
+
+
+cdsModule_3 top(y, _s, a, b, s); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/arpanr2/ece425.work/MUX2-1_run1/testfixture.verilog file
+`include "/home/arpanr2/ece425.work/MUX2-1_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

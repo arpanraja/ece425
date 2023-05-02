@@ -1,0 +1,30 @@
+// Library - edits, Cell - MUX2-1, View - schematic
+// LAST TIME SAVED: May  1 15:31:42 2023
+// NETLIST TIME: May  1 15:37:08 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_3 ( y, _s, a, b, s );
+
+output  y;
+
+input  _s, a, b, s;
+
+
+specify 
+    specparam CDS_LIBNAME  = "edits";
+    specparam CDS_CELLNAME = "MUX2-1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+pfet M9 ( y, cds_globals.vdd_, net4);
+pfet M3 ( net4, net1, s);
+pfet M2 ( net1, cds_globals.vdd_, _s);
+pfet M1 ( net4, net1, b);
+pfet M0 ( net1, cds_globals.vdd_, a);
+nfet M8 ( y, cds_globals.gnd_, net4);
+nfet M7 ( net3, cds_globals.gnd_, s);
+nfet M6 ( net4, net3, b);
+nfet M5 ( net2, cds_globals.gnd_, _s);
+nfet M4 ( net4, net2, a);
+
+endmodule

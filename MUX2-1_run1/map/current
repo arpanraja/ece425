@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "MUX2-1"
+  repList "behavioral functional schematic symbol"
+  stopList "behavioral functional symbol"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/arpanr2/ece425.work/MUX2-1_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "edits/MUX2-1/schematic" "cdsModule_3" )
+ )
+( "cdsModule_3" "ihnl/cds0/map" )
+ )

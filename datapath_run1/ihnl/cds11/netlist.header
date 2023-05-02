@@ -1,6 +1,6 @@
 // Library - ece425mp2, Cell - bitslice, View - schematic
-// LAST TIME SAVED: Apr  7 20:43:28 2023
-// NETLIST TIME: Apr  7 21:00:44 2023
+// LAST TIME SAVED: May  1 16:10:05 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module bitslice ( cout, f, p, q, y, _s0L, _s0Q, _s0R, _s0RS, _s0SS,

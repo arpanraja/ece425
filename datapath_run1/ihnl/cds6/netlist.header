@@ -1,6 +1,6 @@
 // Library - ece425mp2, Cell - latch, View - schematic
-// LAST TIME SAVED: Mar 26 15:13:17 2023
-// NETLIST TIME: Apr  7 21:00:44 2023
+// LAST TIME SAVED: May  1 01:28:58 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module latch ( q, d, en );

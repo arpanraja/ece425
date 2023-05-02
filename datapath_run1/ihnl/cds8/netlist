@@ -1,6 +1,6 @@
 // Library - ece425mp2, Cell - regfile, View - schematic
-// LAST TIME SAVED: Apr  7 20:08:10 2023
-// NETLIST TIME: Apr  7 21:00:44 2023
+// LAST TIME SAVED: May  1 16:05:27 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module regfile ( data_a, data_b, cp, data_write, select_a_hi,
@@ -43,6 +43,6 @@ regbit I42 ( bitline_a, bitline_b, select_a_hi[5], select_b_hi[5]);
 regbit I43 ( bitline_a, bitline_b, select_a_hi[4], select_b_hi[4]);
 regbit I40 ( bitline_a, bitline_b, select_a_hi[7], select_b_hi[7]);
 regbit I32 ( bitline_a, bitline_b, select_a_hi[15], select_b_hi[15]);
-nor2 I58 ( net2, net3, cp);
+nor2 I61 ( net2, cp, net3);
 
 endmodule

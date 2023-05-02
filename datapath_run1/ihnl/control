@@ -2,8 +2,8 @@ hnlLastStopCellInfo = '(
                            ( "ece425mp2" "tx_gate" "functional" "26" "0" )
                           ( "NCSU_Analog_Parts" "pmos" "functional" "24" "1184248839" )
                           ( "NCSU_Analog_Parts" "nmos" "functional" "24" "1184248838" )
-                          ( "NCSU_Digital_Parts" "nand2" "functional" "20" "1184248905" )
                           ( "NCSU_Digital_Parts" "inv" "functional" "17" "0" )
+                          ( "NCSU_Digital_Parts" "nand2" "functional" "20" "1184248905" )
                           ( "ece425mp2" "bitcell" "functional" "20" "1400099701" )
                           ( "NCSU_Digital_Parts" "nor2" "functional" "20" "0" )
                        )
@@ -1207,3 +1207,6 @@ hnlLastLibInfo = '(
                     ( "ece425mp1" "1677524622" )
                    ( "ece425mp2" "1400099701" )
                   )
+hnlLastConstants = '(
+                    )
+hnlLastDesignVars = '( )

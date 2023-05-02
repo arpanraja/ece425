@@ -1,0 +1,14 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  y;
+
+reg  _s, a, b, s;
+
+
+
+cdsModule_3 top(y, _s, a, b, s); 
+ 

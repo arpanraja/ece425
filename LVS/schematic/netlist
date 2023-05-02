@@ -1,61 +1,1284 @@
-t 2 CLK input
-t 3 d input
-t 4 q output
-t 6 _CLK input
+t 22 q_right input
+t 50 q_left input
+t 51 reg_wr input
+t 20 p output
+t 49 cin input
+t 3 select_b_hi<15> input
+t 4 select_b_hi<14> input
+t 5 select_b_hi<13> input
+t 6 select_b_hi<12> input
+t 7 select_b_hi<11> input
+t 8 select_b_hi<10> input
+t 9 select_b_hi<9> input
+t 10 select_b_hi<8> input
+t 11 select_b_hi<7> input
+t 12 select_b_hi<6> input
+t 13 select_b_hi<5> input
+t 14 select_b_hi<4> input
+t 15 select_b_hi<3> input
+t 16 select_b_hi<2> input
+t 17 select_b_hi<1> input
+t 18 select_b_hi<0> input
+t 24 select_a_hi<15> input
+t 25 select_a_hi<14> input
+t 26 select_a_hi<13> input
+t 27 select_a_hi<12> input
+t 28 select_a_hi<11> input
+t 29 select_a_hi<10> input
+t 30 select_a_hi<9> input
+t 31 select_a_hi<8> input
+t 32 select_a_hi<7> input
+t 33 select_a_hi<6> input
+t 34 select_a_hi<5> input
+t 35 select_a_hi<4> input
+t 36 select_a_hi<3> input
+t 37 select_a_hi<2> input
+t 38 select_a_hi<1> input
+t 39 select_a_hi<0> input
+t 2 f output
+t 42 f_right input
+t 40 f_left input
+t 23 cout output
+t 21 q output
+t 46 y output
+t 44 d input
+t 19 cp input
+t 59 inv_s input
+t 60 inv_r input
+t 61 s1L input
+t 62 _s1L input
+t 63 s0L input
+t 64 _s0L input
+t 65 s0ot input
+t 66 _s0ot input
+t 55 s1Q input
+t 53 _s1Q input
+t 52 s0Q input
+t 56 _s0Q input
+t 69 s1R input
+t 70 _s1R input
+t 71 s0R input
+t 72 _s0R input
+t 74 s1RS input
+t 75 _s1RS input
+t 76 s0RS input
+t 77 _s0RS input
+t 68 s1SS input
+t 67 _s1SS input
+t 58 s0SS input
+t 79 sY input
+t 73 _s0SS input
+t 80 _sY input
+t 78 lo input
 n 1 gnd!
 n 0 vdd!
-n 2 /CLK
-n 3 /d
-n 4 /q
-n 5 /net1
-n 6 /_CLK
-n 8 /I1/net4
-n 10 /I1/net3
-n 11 /I1/net5
-; nfet Instance /I1/I1/0 = auLvs device Q0
+n 2 /f
+n 3 /select_b_hi<15>
+n 4 /select_b_hi<14>
+n 5 /select_b_hi<13>
+n 6 /select_b_hi<12>
+n 7 /select_b_hi<11>
+n 8 /select_b_hi<10>
+n 9 /select_b_hi<9>
+n 10 /select_b_hi<8>
+n 11 /select_b_hi<7>
+n 12 /select_b_hi<6>
+n 13 /select_b_hi<5>
+n 14 /select_b_hi<4>
+n 15 /select_b_hi<3>
+n 16 /select_b_hi<2>
+n 17 /select_b_hi<1>
+n 18 /select_b_hi<0>
+n 19 /cp
+n 20 /p
+n 21 /q
+n 22 /q_right
+n 23 /cout
+n 24 /select_a_hi<15>
+n 25 /select_a_hi<14>
+n 26 /select_a_hi<13>
+n 27 /select_a_hi<12>
+n 28 /select_a_hi<11>
+n 29 /select_a_hi<10>
+n 30 /select_a_hi<9>
+n 31 /select_a_hi<8>
+n 32 /select_a_hi<7>
+n 33 /select_a_hi<6>
+n 34 /select_a_hi<5>
+n 35 /select_a_hi<4>
+n 36 /select_a_hi<3>
+n 37 /select_a_hi<2>
+n 38 /select_a_hi<1>
+n 39 /select_a_hi<0>
+n 40 /f_left
+n 41 /net13
+n 42 /f_right
+n 43 /net15
+n 44 /d
+n 45 /net028
+n 46 /y
+n 47 /net16
+n 48 /net027
+n 49 /cin
+n 50 /q_left
+n 51 /reg_wr
+n 52 /s0Q
+n 53 /_s1Q
+n 54 /net1
+n 55 /s1Q
+n 56 /_s0Q
+n 57 /net2
+n 58 /s0SS
+n 59 /inv_s
+n 60 /inv_r
+n 61 /s1L
+n 62 /_s1L
+n 63 /s0L
+n 64 /_s0L
+n 65 /s0ot
+n 66 /_s0ot
+n 67 /_s1SS
+n 68 /s1SS
+n 69 /s1R
+n 70 /_s1R
+n 71 /s0R
+n 72 /_s0R
+n 73 /_s0SS
+n 74 /s1RS
+n 75 /_s1RS
+n 76 /s0RS
+n 77 /_s0RS
+n 78 /lo
+n 79 /sY
+n 80 /_sY
+n 81 /I1/net26
+n 84 /I1/net33
+n 85 /I1/net32
+n 93 /I1/net3
+n 107 /I1/I12/prop_lo
+; nmos Instance /I1/I12/I1/N2 = auLvs device Q0
 d nmos D G S B (p D S)
-i 0 nmos 10 2 1 1 " l 240e-9 w 360e-9 "
-; pfet Instance /I1/I1/1 = auLvs device Q1
+i 0 nmos 49 20 23 1 " m 1 l 240e-9 "
+; pmos Instance /I1/I12/I1/P3 = auLvs device Q1
 d pmos D G S B (p D S)
-i 1 pmos 10 2 0 0 " l 240e-9 w 720e-9 "
-; nfet Instance /I1/I0/0 = auLvs device Q2
-i 2 nmos 8 5 1 1 " l 240e-9 w 1.44e-6 "
-; pfet Instance /I1/I0/1 = auLvs device Q3
-i 3 pmos 8 5 0 0 " l 240e-9 w 2.88e-6 "
-; nmos Instance /I1/I52/N2 = auLvs device Q4
-i 4 nmos 8 2 11 1 " m 1 l 240e-9 "
-; pmos Instance /I1/I52/P3 = auLvs device Q5
-i 5 pmos 8 10 11 0 " m 1 l 240e-9 "
-; nfet Instance /I1/I51/I0/0 = auLvs device Q6
-i 6 nmos 11 4 1 1 " l 240e-9 w 360e-9 "
-; pfet Instance /I1/I51/I0/1 = auLvs device Q7
-i 7 pmos 11 4 0 0 " l 240e-9 w 720e-9 "
-; nfet Instance /I1/I51/I1/0 = auLvs device Q8
-i 8 nmos 4 11 1 1 " l 240e-9 w 360e-9 "
-; pfet Instance /I1/I51/I1/1 = auLvs device Q9
-i 9 pmos 4 11 0 0 " l 240e-9 w 720e-9 "
-n 36 /I0/net4
-n 38 /I0/net3
-n 39 /I0/net5
-; nfet Instance /I0/I1/0 = auLvs device Q10
-i 10 nmos 38 6 1 1 " l 240e-9 w 360e-9 "
-; pfet Instance /I0/I1/1 = auLvs device Q11
-i 11 pmos 38 6 0 0 " l 240e-9 w 720e-9 "
-; nfet Instance /I0/I0/0 = auLvs device Q12
-i 12 nmos 36 3 1 1 " l 240e-9 w 1.44e-6 "
-; pfet Instance /I0/I0/1 = auLvs device Q13
-i 13 pmos 36 3 0 0 " l 240e-9 w 2.88e-6 "
-; nmos Instance /I0/I52/N2 = auLvs device Q14
-i 14 nmos 36 6 39 1 " m 1 l 240e-9 "
-; pmos Instance /I0/I52/P3 = auLvs device Q15
-i 15 pmos 36 38 39 0 " m 1 l 240e-9 "
-; nfet Instance /I0/I51/I0/0 = auLvs device Q16
-i 16 nmos 39 5 1 1 " l 240e-9 w 360e-9 "
-; pfet Instance /I0/I51/I0/1 = auLvs device Q17
-i 17 pmos 39 5 0 0 " l 240e-9 w 720e-9 "
-; nfet Instance /I0/I51/I1/0 = auLvs device Q18
-i 18 nmos 5 39 1 1 " l 240e-9 w 360e-9 "
-; pfet Instance /I0/I51/I1/1 = auLvs device Q19
-i 19 pmos 5 39 0 0 " l 240e-9 w 720e-9 "
+i 1 pmos 49 107 23 0 " m 1 l 240e-9 "
+; pmos Instance /I1/I12/M1 = auLvs device Q2
+i 2 pmos 23 84 0 0 " m 1 l 240e-9 "
+; nmos Instance /I1/I12/M0 = auLvs device Q3
+i 3 nmos 23 85 1 1 " m 1 l 240e-9 "
+n 115 /I1/I12/I5/net1
+n 116 /I1/I12/I5/net2
+n 117 /I1/I12/I5/net3
+n 118 /I1/I12/I5/net4
+; nmos Instance /I1/I12/I5/M9 = auLvs device Q4
+i 4 nmos 81 115 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I12/I5/M8 = auLvs device Q5
+i 5 nmos 118 49 1 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I12/I5/M7 = auLvs device Q6
+i 6 nmos 81 20 118 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I12/I5/M1 = auLvs device Q7
+i 7 nmos 115 49 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I12/I5/M0 = auLvs device Q8
+i 8 nmos 115 20 1 1 " m 1 l 240e-9 w 360e-9 "
+; pmos Instance /I1/I12/I5/M6 = auLvs device Q9
+i 9 pmos 81 115 116 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I12/I5/M5 = auLvs device Q10
+i 10 pmos 116 20 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I12/I5/M3 = auLvs device Q11
+i 11 pmos 117 49 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I12/I5/M2 = auLvs device Q12
+i 12 pmos 115 20 117 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I12/I5/M4 = auLvs device Q13
+i 13 pmos 116 49 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; nfet Instance /I1/I12/I7/0 = auLvs device Q14
+i 14 nmos 107 20 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I1/I12/I7/1 = auLvs device Q15
+i 15 pmos 107 20 0 0 " l 240e-9 w 720e-9 "
+n 121 /I1/I11/net11
+n 128 /I1/I11/net1
+n 130 /I1/I11/I10/net9
+; nfet Instance /I1/I11/I10/1 = auLvs device Q16
+i 16 nmos 84 128 130 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I11/I10/0 = auLvs device Q17
+i 17 nmos 130 121 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I11/I10/3 = auLvs device Q18
+i 18 pmos 84 121 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I11/I10/2 = auLvs device Q19
+i 19 pmos 84 128 0 0 " l 240e-9 w 720e-9 "
+n 135 /I1/I11/I12/net10
+; nfet Instance /I1/I11/I12/1 = auLvs device Q20
+i 20 nmos 85 121 1 1 " l 240e-9 w 360e-9 "
+; nfet Instance /I1/I11/I12/0 = auLvs device Q21
+i 21 nmos 85 128 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I1/I11/I12/3 = auLvs device Q22
+i 22 pmos 135 128 0 0 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I1/I11/I12/2 = auLvs device Q23
+i 23 pmos 85 121 135 0 " l 240e-9 w 1.44e-6 "
+n 141 /I1/I11/I7/net1
+n 142 /I1/I11/I7/net2
+n 143 /I1/I11/I7/net3
+n 144 /I1/I11/I7/net4
+; nmos Instance /I1/I11/I7/M9 = auLvs device Q24
+i 24 nmos 20 141 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I11/I7/M8 = auLvs device Q25
+i 25 nmos 144 121 1 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I11/I7/M7 = auLvs device Q26
+i 26 nmos 20 128 144 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I11/I7/M1 = auLvs device Q27
+i 27 nmos 141 121 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I11/I7/M0 = auLvs device Q28
+i 28 nmos 141 128 1 1 " m 1 l 240e-9 w 360e-9 "
+; pmos Instance /I1/I11/I7/M6 = auLvs device Q29
+i 29 pmos 20 141 142 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I7/M5 = auLvs device Q30
+i 30 pmos 142 128 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I7/M3 = auLvs device Q31
+i 31 pmos 143 121 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I7/M2 = auLvs device Q32
+i 32 pmos 141 128 143 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I7/M4 = auLvs device Q33
+i 33 pmos 142 121 0 0 " m 1 l 240e-9 w 1.44e-6 "
+n 148 /I1/I11/I6/net1
+n 149 /I1/I11/I6/net2
+n 150 /I1/I11/I6/net3
+n 151 /I1/I11/I6/net4
+; nmos Instance /I1/I11/I6/M9 = auLvs device Q34
+i 34 nmos 121 148 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I11/I6/M8 = auLvs device Q35
+i 35 nmos 151 59 1 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I11/I6/M7 = auLvs device Q36
+i 36 nmos 121 45 151 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I11/I6/M1 = auLvs device Q37
+i 37 nmos 148 59 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I11/I6/M0 = auLvs device Q38
+i 38 nmos 148 45 1 1 " m 1 l 240e-9 w 360e-9 "
+; pmos Instance /I1/I11/I6/M6 = auLvs device Q39
+i 39 pmos 121 148 149 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I6/M5 = auLvs device Q40
+i 40 pmos 149 45 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I6/M3 = auLvs device Q41
+i 41 pmos 150 59 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I6/M2 = auLvs device Q42
+i 42 pmos 148 45 150 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I6/M4 = auLvs device Q43
+i 43 pmos 149 59 0 0 " m 1 l 240e-9 w 1.44e-6 "
+n 155 /I1/I11/I3/net1
+n 156 /I1/I11/I3/net2
+n 157 /I1/I11/I3/net3
+n 158 /I1/I11/I3/net4
+; nmos Instance /I1/I11/I3/M9 = auLvs device Q44
+i 44 nmos 128 155 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I11/I3/M8 = auLvs device Q45
+i 45 nmos 158 60 1 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I11/I3/M7 = auLvs device Q46
+i 46 nmos 128 48 158 1 " m 1 l 240e-9 w 720e-9 "
+; nmos Instance /I1/I11/I3/M1 = auLvs device Q47
+i 47 nmos 155 60 1 1 " m 1 l 240e-9 w 360e-9 "
+; nmos Instance /I1/I11/I3/M0 = auLvs device Q48
+i 48 nmos 155 48 1 1 " m 1 l 240e-9 w 360e-9 "
+; pmos Instance /I1/I11/I3/M6 = auLvs device Q49
+i 49 pmos 128 155 156 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I3/M5 = auLvs device Q50
+i 50 pmos 156 48 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I3/M3 = auLvs device Q51
+i 51 pmos 157 60 0 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I3/M2 = auLvs device Q52
+i 52 pmos 155 48 157 0 " m 1 l 240e-9 w 1.44e-6 "
+; pmos Instance /I1/I11/I3/M4 = auLvs device Q53
+i 53 pmos 156 60 0 0 " m 1 l 240e-9 w 1.44e-6 "
+n 165 /I1/I13/net1
+n 172 /I1/I13/I1/net1
+n 173 /I1/I13/I1/net3
+n 175 /I1/I13/I1/I5/net9
+; nfet Instance /I1/I13/I1/I5/1 = auLvs device Q54
+i 54 nmos 172 84 175 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I13/I1/I5/0 = auLvs device Q55
+i 55 nmos 175 61 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I1/I5/3 = auLvs device Q56
+i 56 pmos 172 61 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I1/I5/2 = auLvs device Q57
+i 57 pmos 172 84 0 0 " l 240e-9 w 720e-9 "
+n 179 /I1/I13/I1/I7/net9
+; nfet Instance /I1/I13/I1/I7/1 = auLvs device Q58
+i 58 nmos 93 172 179 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I13/I1/I7/0 = auLvs device Q59
+i 59 nmos 179 173 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I1/I7/3 = auLvs device Q60
+i 60 pmos 93 173 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I1/I7/2 = auLvs device Q61
+i 61 pmos 93 172 0 0 " l 240e-9 w 720e-9 "
+n 183 /I1/I13/I1/I6/net9
+; nfet Instance /I1/I13/I1/I6/1 = auLvs device Q62
+i 62 nmos 173 62 183 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I13/I1/I6/0 = auLvs device Q63
+i 63 nmos 183 165 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I1/I6/3 = auLvs device Q64
+i 64 pmos 173 165 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I1/I6/2 = auLvs device Q65
+i 65 pmos 173 62 0 0 " l 240e-9 w 720e-9 "
+n 191 /I1/I13/I0/net1
+n 192 /I1/I13/I0/net3
+n 194 /I1/I13/I0/I5/net9
+; nfet Instance /I1/I13/I0/I5/1 = auLvs device Q66
+i 66 nmos 191 85 194 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I13/I0/I5/0 = auLvs device Q67
+i 67 nmos 194 63 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I0/I5/3 = auLvs device Q68
+i 68 pmos 191 63 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I0/I5/2 = auLvs device Q69
+i 69 pmos 191 85 0 0 " l 240e-9 w 720e-9 "
+n 198 /I1/I13/I0/I7/net9
+; nfet Instance /I1/I13/I0/I7/1 = auLvs device Q70
+i 70 nmos 165 191 198 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I13/I0/I7/0 = auLvs device Q71
+i 71 nmos 198 192 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I0/I7/3 = auLvs device Q72
+i 72 pmos 165 192 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I0/I7/2 = auLvs device Q73
+i 73 pmos 165 191 0 0 " l 240e-9 w 720e-9 "
+n 202 /I1/I13/I0/I6/net9
+; nfet Instance /I1/I13/I0/I6/1 = auLvs device Q74
+i 74 nmos 192 64 202 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I13/I0/I6/0 = auLvs device Q75
+i 75 nmos 202 20 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I0/I6/3 = auLvs device Q76
+i 76 pmos 192 20 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I13/I0/I6/2 = auLvs device Q77
+i 77 pmos 192 64 0 0 " l 240e-9 w 720e-9 "
+n 210 /I1/I14/net1
+n 211 /I1/I14/net3
+n 213 /I1/I14/I5/net9
+; nfet Instance /I1/I14/I5/1 = auLvs device Q78
+i 78 nmos 210 81 213 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I14/I5/0 = auLvs device Q79
+i 79 nmos 213 65 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I14/I5/3 = auLvs device Q80
+i 80 pmos 210 65 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I14/I5/2 = auLvs device Q81
+i 81 pmos 210 81 0 0 " l 240e-9 w 720e-9 "
+n 217 /I1/I14/I7/net9
+; nfet Instance /I1/I14/I7/1 = auLvs device Q82
+i 82 nmos 2 210 217 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I14/I7/0 = auLvs device Q83
+i 83 nmos 217 211 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I14/I7/3 = auLvs device Q84
+i 84 pmos 2 211 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I14/I7/2 = auLvs device Q85
+i 85 pmos 2 210 0 0 " l 240e-9 w 720e-9 "
+n 221 /I1/I14/I6/net9
+; nfet Instance /I1/I14/I6/1 = auLvs device Q86
+i 86 nmos 211 66 221 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I1/I14/I6/0 = auLvs device Q87
+i 87 nmos 221 93 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I14/I6/3 = auLvs device Q88
+i 88 pmos 211 93 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I1/I14/I6/2 = auLvs device Q89
+i 89 pmos 211 66 0 0 " l 240e-9 w 720e-9 "
+n 226 /I0/net2
+n 237 /I0/net3
+n 242 /I0/net057
+n 247 /I0/bitline_b
+n 248 /I0/net44
+n 258 /I0/bitline_a
+n 268 /I0/net1
+; nfet Instance /I0/I59/0 = auLvs device Q90
+i 90 nmos 237 51 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I59/1 = auLvs device Q91
+i 91 pmos 237 51 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I57/0 = auLvs device Q92
+i 92 nmos 248 226 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I57/1 = auLvs device Q93
+i 93 pmos 248 226 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I56/0 = auLvs device Q94
+i 94 nmos 242 268 1 1 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I0/I56/1 = auLvs device Q95
+i 95 pmos 242 268 0 0 " l 240e-9 w 2.88e-6 "
+; nfet Instance /I0/I55/0 = auLvs device Q96
+i 96 nmos 268 41 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I55/1 = auLvs device Q97
+i 97 pmos 268 41 0 0 " l 240e-9 w 720e-9 "
+n 278 /I0/I49/net4
+n 280 /I0/I49/net3
+n 281 /I0/I49/net5
+; nfet Instance /I0/I49/I1/0 = auLvs device Q98
+i 98 nmos 280 19 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I49/I1/1 = auLvs device Q99
+i 99 pmos 280 19 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I49/I0/0 = auLvs device Q100
+i 100 nmos 278 247 1 1 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I0/I49/I0/1 = auLvs device Q101
+i 101 pmos 278 247 0 0 " l 240e-9 w 2.88e-6 "
+; nmos Instance /I0/I49/I52/N2 = auLvs device Q102
+i 102 nmos 278 19 281 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I49/I52/P3 = auLvs device Q103
+i 103 pmos 278 280 281 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I49/I51/I0/0 = auLvs device Q104
+i 104 nmos 281 43 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I49/I51/I0/1 = auLvs device Q105
+i 105 pmos 281 43 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I49/I51/I1/0 = auLvs device Q106
+i 106 nmos 43 281 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I49/I51/I1/1 = auLvs device Q107
+i 107 pmos 43 281 0 0 " l 240e-9 w 720e-9 "
+n 298 /I0/I54/net4
+n 300 /I0/I54/net3
+n 301 /I0/I54/net5
+; nfet Instance /I0/I54/I1/0 = auLvs device Q108
+i 108 nmos 300 19 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I54/I1/1 = auLvs device Q109
+i 109 pmos 300 19 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I54/I0/0 = auLvs device Q110
+i 110 nmos 298 258 1 1 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I0/I54/I0/1 = auLvs device Q111
+i 111 pmos 298 258 0 0 " l 240e-9 w 2.88e-6 "
+; nmos Instance /I0/I54/I52/N2 = auLvs device Q112
+i 112 nmos 298 19 301 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I54/I52/P3 = auLvs device Q113
+i 113 pmos 298 300 301 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I54/I51/I0/0 = auLvs device Q114
+i 114 nmos 301 47 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I54/I51/I0/1 = auLvs device Q115
+i 115 pmos 301 47 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I54/I51/I1/0 = auLvs device Q116
+i 116 nmos 47 301 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I54/I51/I1/1 = auLvs device Q117
+i 117 pmos 47 301 0 0 " l 240e-9 w 720e-9 "
+; nmos Instance /I0/I48/N2 = auLvs device Q118
+i 118 nmos 242 226 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I48/P3 = auLvs device Q119
+i 119 pmos 242 248 247 0 " m 1 l 240e-9 "
+n 321 /I0/I41/net03
+n 323 /I0/I41/net08
+n 325 /I0/I41/net4
+n 327 /I0/I41/net07
+; nmos Instance /I0/I41/I1/N2 = auLvs device Q120
+i 120 nmos 323 33 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I41/I1/P3 = auLvs device Q121
+i 121 pmos 323 327 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I41/I2/N2 = auLvs device Q122
+i 122 nmos 323 12 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I41/I2/P3 = auLvs device Q123
+i 123 pmos 323 321 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I41/I0/I0/0 = auLvs device Q124
+i 124 nmos 325 323 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I41/I0/I0/1 = auLvs device Q125
+i 125 pmos 325 323 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I41/I0/I1/0 = auLvs device Q126
+i 126 nmos 323 325 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I41/I0/I1/1 = auLvs device Q127
+i 127 pmos 323 325 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I41/I7/0 = auLvs device Q128
+i 128 nmos 321 12 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I41/I7/1 = auLvs device Q129
+i 129 pmos 321 12 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I41/I6/0 = auLvs device Q130
+i 130 nmos 327 33 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I41/I6/1 = auLvs device Q131
+i 131 pmos 327 33 0 0 " l 240e-9 w 720e-9 "
+n 347 /I0/I36/net03
+n 349 /I0/I36/net08
+n 351 /I0/I36/net4
+n 353 /I0/I36/net07
+; nmos Instance /I0/I36/I1/N2 = auLvs device Q132
+i 132 nmos 349 28 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I36/I1/P3 = auLvs device Q133
+i 133 pmos 349 353 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I36/I2/N2 = auLvs device Q134
+i 134 nmos 349 7 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I36/I2/P3 = auLvs device Q135
+i 135 pmos 349 347 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I36/I0/I0/0 = auLvs device Q136
+i 136 nmos 351 349 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I36/I0/I0/1 = auLvs device Q137
+i 137 pmos 351 349 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I36/I0/I1/0 = auLvs device Q138
+i 138 nmos 349 351 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I36/I0/I1/1 = auLvs device Q139
+i 139 pmos 349 351 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I36/I7/0 = auLvs device Q140
+i 140 nmos 347 7 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I36/I7/1 = auLvs device Q141
+i 141 pmos 347 7 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I36/I6/0 = auLvs device Q142
+i 142 nmos 353 28 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I36/I6/1 = auLvs device Q143
+i 143 pmos 353 28 0 0 " l 240e-9 w 720e-9 "
+n 373 /I0/I34/net03
+n 375 /I0/I34/net08
+n 377 /I0/I34/net4
+n 379 /I0/I34/net07
+; nmos Instance /I0/I34/I1/N2 = auLvs device Q144
+i 144 nmos 375 26 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I34/I1/P3 = auLvs device Q145
+i 145 pmos 375 379 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I34/I2/N2 = auLvs device Q146
+i 146 nmos 375 5 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I34/I2/P3 = auLvs device Q147
+i 147 pmos 375 373 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I34/I0/I0/0 = auLvs device Q148
+i 148 nmos 377 375 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I34/I0/I0/1 = auLvs device Q149
+i 149 pmos 377 375 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I34/I0/I1/0 = auLvs device Q150
+i 150 nmos 375 377 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I34/I0/I1/1 = auLvs device Q151
+i 151 pmos 375 377 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I34/I7/0 = auLvs device Q152
+i 152 nmos 373 5 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I34/I7/1 = auLvs device Q153
+i 153 pmos 373 5 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I34/I6/0 = auLvs device Q154
+i 154 nmos 379 26 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I34/I6/1 = auLvs device Q155
+i 155 pmos 379 26 0 0 " l 240e-9 w 720e-9 "
+n 399 /I0/I33/net03
+n 401 /I0/I33/net08
+n 403 /I0/I33/net4
+n 405 /I0/I33/net07
+; nmos Instance /I0/I33/I1/N2 = auLvs device Q156
+i 156 nmos 401 25 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I33/I1/P3 = auLvs device Q157
+i 157 pmos 401 405 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I33/I2/N2 = auLvs device Q158
+i 158 nmos 401 4 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I33/I2/P3 = auLvs device Q159
+i 159 pmos 401 399 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I33/I0/I0/0 = auLvs device Q160
+i 160 nmos 403 401 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I33/I0/I0/1 = auLvs device Q161
+i 161 pmos 403 401 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I33/I0/I1/0 = auLvs device Q162
+i 162 nmos 401 403 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I33/I0/I1/1 = auLvs device Q163
+i 163 pmos 401 403 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I33/I7/0 = auLvs device Q164
+i 164 nmos 399 4 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I33/I7/1 = auLvs device Q165
+i 165 pmos 399 4 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I33/I6/0 = auLvs device Q166
+i 166 nmos 405 25 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I33/I6/1 = auLvs device Q167
+i 167 pmos 405 25 0 0 " l 240e-9 w 720e-9 "
+n 425 /I0/I47/net03
+n 427 /I0/I47/net08
+n 429 /I0/I47/net4
+n 431 /I0/I47/net07
+; nmos Instance /I0/I47/I1/N2 = auLvs device Q168
+i 168 nmos 427 39 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I47/I1/P3 = auLvs device Q169
+i 169 pmos 427 431 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I47/I2/N2 = auLvs device Q170
+i 170 nmos 427 18 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I47/I2/P3 = auLvs device Q171
+i 171 pmos 427 425 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I47/I0/I0/0 = auLvs device Q172
+i 172 nmos 429 427 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I47/I0/I0/1 = auLvs device Q173
+i 173 pmos 429 427 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I47/I0/I1/0 = auLvs device Q174
+i 174 nmos 427 429 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I47/I0/I1/1 = auLvs device Q175
+i 175 pmos 427 429 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I47/I7/0 = auLvs device Q176
+i 176 nmos 425 18 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I47/I7/1 = auLvs device Q177
+i 177 pmos 425 18 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I47/I6/0 = auLvs device Q178
+i 178 nmos 431 39 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I47/I6/1 = auLvs device Q179
+i 179 pmos 431 39 0 0 " l 240e-9 w 720e-9 "
+n 451 /I0/I44/net03
+n 453 /I0/I44/net08
+n 455 /I0/I44/net4
+n 457 /I0/I44/net07
+; nmos Instance /I0/I44/I1/N2 = auLvs device Q180
+i 180 nmos 453 36 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I44/I1/P3 = auLvs device Q181
+i 181 pmos 453 457 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I44/I2/N2 = auLvs device Q182
+i 182 nmos 453 15 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I44/I2/P3 = auLvs device Q183
+i 183 pmos 453 451 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I44/I0/I0/0 = auLvs device Q184
+i 184 nmos 455 453 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I44/I0/I0/1 = auLvs device Q185
+i 185 pmos 455 453 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I44/I0/I1/0 = auLvs device Q186
+i 186 nmos 453 455 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I44/I0/I1/1 = auLvs device Q187
+i 187 pmos 453 455 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I44/I7/0 = auLvs device Q188
+i 188 nmos 451 15 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I44/I7/1 = auLvs device Q189
+i 189 pmos 451 15 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I44/I6/0 = auLvs device Q190
+i 190 nmos 457 36 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I44/I6/1 = auLvs device Q191
+i 191 pmos 457 36 0 0 " l 240e-9 w 720e-9 "
+n 477 /I0/I38/net03
+n 479 /I0/I38/net08
+n 481 /I0/I38/net4
+n 483 /I0/I38/net07
+; nmos Instance /I0/I38/I1/N2 = auLvs device Q192
+i 192 nmos 479 30 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I38/I1/P3 = auLvs device Q193
+i 193 pmos 479 483 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I38/I2/N2 = auLvs device Q194
+i 194 nmos 479 9 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I38/I2/P3 = auLvs device Q195
+i 195 pmos 479 477 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I38/I0/I0/0 = auLvs device Q196
+i 196 nmos 481 479 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I38/I0/I0/1 = auLvs device Q197
+i 197 pmos 481 479 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I38/I0/I1/0 = auLvs device Q198
+i 198 nmos 479 481 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I38/I0/I1/1 = auLvs device Q199
+i 199 pmos 479 481 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I38/I7/0 = auLvs device Q200
+i 200 nmos 477 9 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I38/I7/1 = auLvs device Q201
+i 201 pmos 477 9 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I38/I6/0 = auLvs device Q202
+i 202 nmos 483 30 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I38/I6/1 = auLvs device Q203
+i 203 pmos 483 30 0 0 " l 240e-9 w 720e-9 "
+n 503 /I0/I39/net03
+n 505 /I0/I39/net08
+n 507 /I0/I39/net4
+n 509 /I0/I39/net07
+; nmos Instance /I0/I39/I1/N2 = auLvs device Q204
+i 204 nmos 505 31 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I39/I1/P3 = auLvs device Q205
+i 205 pmos 505 509 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I39/I2/N2 = auLvs device Q206
+i 206 nmos 505 10 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I39/I2/P3 = auLvs device Q207
+i 207 pmos 505 503 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I39/I0/I0/0 = auLvs device Q208
+i 208 nmos 507 505 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I39/I0/I0/1 = auLvs device Q209
+i 209 pmos 507 505 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I39/I0/I1/0 = auLvs device Q210
+i 210 nmos 505 507 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I39/I0/I1/1 = auLvs device Q211
+i 211 pmos 505 507 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I39/I7/0 = auLvs device Q212
+i 212 nmos 503 10 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I39/I7/1 = auLvs device Q213
+i 213 pmos 503 10 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I39/I6/0 = auLvs device Q214
+i 214 nmos 509 31 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I39/I6/1 = auLvs device Q215
+i 215 pmos 509 31 0 0 " l 240e-9 w 720e-9 "
+n 529 /I0/I35/net03
+n 531 /I0/I35/net08
+n 533 /I0/I35/net4
+n 535 /I0/I35/net07
+; nmos Instance /I0/I35/I1/N2 = auLvs device Q216
+i 216 nmos 531 27 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I35/I1/P3 = auLvs device Q217
+i 217 pmos 531 535 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I35/I2/N2 = auLvs device Q218
+i 218 nmos 531 6 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I35/I2/P3 = auLvs device Q219
+i 219 pmos 531 529 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I35/I0/I0/0 = auLvs device Q220
+i 220 nmos 533 531 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I35/I0/I0/1 = auLvs device Q221
+i 221 pmos 533 531 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I35/I0/I1/0 = auLvs device Q222
+i 222 nmos 531 533 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I35/I0/I1/1 = auLvs device Q223
+i 223 pmos 531 533 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I35/I7/0 = auLvs device Q224
+i 224 nmos 529 6 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I35/I7/1 = auLvs device Q225
+i 225 pmos 529 6 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I35/I6/0 = auLvs device Q226
+i 226 nmos 535 27 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I35/I6/1 = auLvs device Q227
+i 227 pmos 535 27 0 0 " l 240e-9 w 720e-9 "
+n 555 /I0/I37/net03
+n 557 /I0/I37/net08
+n 559 /I0/I37/net4
+n 561 /I0/I37/net07
+; nmos Instance /I0/I37/I1/N2 = auLvs device Q228
+i 228 nmos 557 29 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I37/I1/P3 = auLvs device Q229
+i 229 pmos 557 561 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I37/I2/N2 = auLvs device Q230
+i 230 nmos 557 8 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I37/I2/P3 = auLvs device Q231
+i 231 pmos 557 555 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I37/I0/I0/0 = auLvs device Q232
+i 232 nmos 559 557 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I37/I0/I0/1 = auLvs device Q233
+i 233 pmos 559 557 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I37/I0/I1/0 = auLvs device Q234
+i 234 nmos 557 559 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I37/I0/I1/1 = auLvs device Q235
+i 235 pmos 557 559 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I37/I7/0 = auLvs device Q236
+i 236 nmos 555 8 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I37/I7/1 = auLvs device Q237
+i 237 pmos 555 8 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I37/I6/0 = auLvs device Q238
+i 238 nmos 561 29 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I37/I6/1 = auLvs device Q239
+i 239 pmos 561 29 0 0 " l 240e-9 w 720e-9 "
+n 581 /I0/I45/net03
+n 583 /I0/I45/net08
+n 585 /I0/I45/net4
+n 587 /I0/I45/net07
+; nmos Instance /I0/I45/I1/N2 = auLvs device Q240
+i 240 nmos 583 37 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I45/I1/P3 = auLvs device Q241
+i 241 pmos 583 587 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I45/I2/N2 = auLvs device Q242
+i 242 nmos 583 16 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I45/I2/P3 = auLvs device Q243
+i 243 pmos 583 581 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I45/I0/I0/0 = auLvs device Q244
+i 244 nmos 585 583 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I45/I0/I0/1 = auLvs device Q245
+i 245 pmos 585 583 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I45/I0/I1/0 = auLvs device Q246
+i 246 nmos 583 585 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I45/I0/I1/1 = auLvs device Q247
+i 247 pmos 583 585 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I45/I7/0 = auLvs device Q248
+i 248 nmos 581 16 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I45/I7/1 = auLvs device Q249
+i 249 pmos 581 16 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I45/I6/0 = auLvs device Q250
+i 250 nmos 587 37 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I45/I6/1 = auLvs device Q251
+i 251 pmos 587 37 0 0 " l 240e-9 w 720e-9 "
+n 607 /I0/I46/net03
+n 609 /I0/I46/net08
+n 611 /I0/I46/net4
+n 613 /I0/I46/net07
+; nmos Instance /I0/I46/I1/N2 = auLvs device Q252
+i 252 nmos 609 38 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I46/I1/P3 = auLvs device Q253
+i 253 pmos 609 613 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I46/I2/N2 = auLvs device Q254
+i 254 nmos 609 17 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I46/I2/P3 = auLvs device Q255
+i 255 pmos 609 607 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I46/I0/I0/0 = auLvs device Q256
+i 256 nmos 611 609 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I46/I0/I0/1 = auLvs device Q257
+i 257 pmos 611 609 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I46/I0/I1/0 = auLvs device Q258
+i 258 nmos 609 611 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I46/I0/I1/1 = auLvs device Q259
+i 259 pmos 609 611 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I46/I7/0 = auLvs device Q260
+i 260 nmos 607 17 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I46/I7/1 = auLvs device Q261
+i 261 pmos 607 17 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I46/I6/0 = auLvs device Q262
+i 262 nmos 613 38 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I46/I6/1 = auLvs device Q263
+i 263 pmos 613 38 0 0 " l 240e-9 w 720e-9 "
+n 633 /I0/I42/net03
+n 635 /I0/I42/net08
+n 637 /I0/I42/net4
+n 639 /I0/I42/net07
+; nmos Instance /I0/I42/I1/N2 = auLvs device Q264
+i 264 nmos 635 34 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I42/I1/P3 = auLvs device Q265
+i 265 pmos 635 639 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I42/I2/N2 = auLvs device Q266
+i 266 nmos 635 13 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I42/I2/P3 = auLvs device Q267
+i 267 pmos 635 633 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I42/I0/I0/0 = auLvs device Q268
+i 268 nmos 637 635 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I42/I0/I0/1 = auLvs device Q269
+i 269 pmos 637 635 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I42/I0/I1/0 = auLvs device Q270
+i 270 nmos 635 637 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I42/I0/I1/1 = auLvs device Q271
+i 271 pmos 635 637 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I42/I7/0 = auLvs device Q272
+i 272 nmos 633 13 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I42/I7/1 = auLvs device Q273
+i 273 pmos 633 13 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I42/I6/0 = auLvs device Q274
+i 274 nmos 639 34 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I42/I6/1 = auLvs device Q275
+i 275 pmos 639 34 0 0 " l 240e-9 w 720e-9 "
+n 659 /I0/I43/net03
+n 661 /I0/I43/net08
+n 663 /I0/I43/net4
+n 665 /I0/I43/net07
+; nmos Instance /I0/I43/I1/N2 = auLvs device Q276
+i 276 nmos 661 35 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I43/I1/P3 = auLvs device Q277
+i 277 pmos 661 665 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I43/I2/N2 = auLvs device Q278
+i 278 nmos 661 14 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I43/I2/P3 = auLvs device Q279
+i 279 pmos 661 659 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I43/I0/I0/0 = auLvs device Q280
+i 280 nmos 663 661 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I43/I0/I0/1 = auLvs device Q281
+i 281 pmos 663 661 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I43/I0/I1/0 = auLvs device Q282
+i 282 nmos 661 663 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I43/I0/I1/1 = auLvs device Q283
+i 283 pmos 661 663 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I43/I7/0 = auLvs device Q284
+i 284 nmos 659 14 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I43/I7/1 = auLvs device Q285
+i 285 pmos 659 14 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I43/I6/0 = auLvs device Q286
+i 286 nmos 665 35 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I43/I6/1 = auLvs device Q287
+i 287 pmos 665 35 0 0 " l 240e-9 w 720e-9 "
+n 685 /I0/I40/net03
+n 687 /I0/I40/net08
+n 689 /I0/I40/net4
+n 691 /I0/I40/net07
+; nmos Instance /I0/I40/I1/N2 = auLvs device Q288
+i 288 nmos 687 32 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I40/I1/P3 = auLvs device Q289
+i 289 pmos 687 691 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I40/I2/N2 = auLvs device Q290
+i 290 nmos 687 11 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I40/I2/P3 = auLvs device Q291
+i 291 pmos 687 685 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I40/I0/I0/0 = auLvs device Q292
+i 292 nmos 689 687 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I40/I0/I0/1 = auLvs device Q293
+i 293 pmos 689 687 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I40/I0/I1/0 = auLvs device Q294
+i 294 nmos 687 689 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I40/I0/I1/1 = auLvs device Q295
+i 295 pmos 687 689 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I40/I7/0 = auLvs device Q296
+i 296 nmos 685 11 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I40/I7/1 = auLvs device Q297
+i 297 pmos 685 11 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I40/I6/0 = auLvs device Q298
+i 298 nmos 691 32 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I40/I6/1 = auLvs device Q299
+i 299 pmos 691 32 0 0 " l 240e-9 w 720e-9 "
+n 711 /I0/I32/net03
+n 713 /I0/I32/net08
+n 715 /I0/I32/net4
+n 717 /I0/I32/net07
+; nmos Instance /I0/I32/I1/N2 = auLvs device Q300
+i 300 nmos 713 24 258 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I32/I1/P3 = auLvs device Q301
+i 301 pmos 713 717 258 0 " m 1 l 240e-9 "
+; nmos Instance /I0/I32/I2/N2 = auLvs device Q302
+i 302 nmos 713 3 247 1 " m 1 l 240e-9 "
+; pmos Instance /I0/I32/I2/P3 = auLvs device Q303
+i 303 pmos 713 711 247 0 " m 1 l 240e-9 "
+; nfet Instance /I0/I32/I0/I0/0 = auLvs device Q304
+i 304 nmos 715 713 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I32/I0/I0/1 = auLvs device Q305
+i 305 pmos 715 713 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I32/I0/I1/0 = auLvs device Q306
+i 306 nmos 713 715 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I32/I0/I1/1 = auLvs device Q307
+i 307 pmos 713 715 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I32/I7/0 = auLvs device Q308
+i 308 nmos 711 3 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I32/I7/1 = auLvs device Q309
+i 309 pmos 711 3 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I0/I32/I6/0 = auLvs device Q310
+i 310 nmos 717 24 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I32/I6/1 = auLvs device Q311
+i 311 pmos 717 24 0 0 " l 240e-9 w 720e-9 "
+n 738 /I0/I61/net10
+; nfet Instance /I0/I61/1 = auLvs device Q312
+i 312 nmos 226 237 1 1 " l 240e-9 w 360e-9 "
+; nfet Instance /I0/I61/0 = auLvs device Q313
+i 313 nmos 226 19 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I0/I61/3 = auLvs device Q314
+i 314 pmos 738 19 0 0 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I0/I61/2 = auLvs device Q315
+i 315 pmos 226 237 738 0 " l 240e-9 w 1.44e-6 "
+n 744 /I2/net1
+n 747 /I2/I1/net4
+n 749 /I2/I1/net3
+n 750 /I2/I1/net5
+; nfet Instance /I2/I1/I1/0 = auLvs device Q316
+i 316 nmos 749 19 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I2/I1/I1/1 = auLvs device Q317
+i 317 pmos 749 19 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I2/I1/I0/0 = auLvs device Q318
+i 318 nmos 747 744 1 1 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I2/I1/I0/1 = auLvs device Q319
+i 319 pmos 747 744 0 0 " l 240e-9 w 2.88e-6 "
+; nmos Instance /I2/I1/I52/N2 = auLvs device Q320
+i 320 nmos 747 19 750 1 " m 1 l 240e-9 "
+; pmos Instance /I2/I1/I52/P3 = auLvs device Q321
+i 321 pmos 747 749 750 0 " m 1 l 240e-9 "
+; nfet Instance /I2/I1/I51/I0/0 = auLvs device Q322
+i 322 nmos 750 21 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I2/I1/I51/I0/1 = auLvs device Q323
+i 323 pmos 750 21 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I2/I1/I51/I1/0 = auLvs device Q324
+i 324 nmos 21 750 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I2/I1/I51/I1/1 = auLvs device Q325
+i 325 pmos 21 750 0 0 " l 240e-9 w 720e-9 "
+n 767 /I2/I0/net4
+n 769 /I2/I0/net3
+n 770 /I2/I0/net5
+; nfet Instance /I2/I0/I1/0 = auLvs device Q326
+i 326 nmos 769 54 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I2/I0/I1/1 = auLvs device Q327
+i 327 pmos 769 54 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I2/I0/I0/0 = auLvs device Q328
+i 328 nmos 767 57 1 1 " l 240e-9 w 1.44e-6 "
+; pfet Instance /I2/I0/I0/1 = auLvs device Q329
+i 329 pmos 767 57 0 0 " l 240e-9 w 2.88e-6 "
+; nmos Instance /I2/I0/I52/N2 = auLvs device Q330
+i 330 nmos 767 54 770 1 " m 1 l 240e-9 "
+; pmos Instance /I2/I0/I52/P3 = auLvs device Q331
+i 331 pmos 767 769 770 0 " m 1 l 240e-9 "
+; nfet Instance /I2/I0/I51/I0/0 = auLvs device Q332
+i 332 nmos 770 744 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I2/I0/I51/I0/1 = auLvs device Q333
+i 333 pmos 770 744 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I2/I0/I51/I1/0 = auLvs device Q334
+i 334 nmos 744 770 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I2/I0/I51/I1/1 = auLvs device Q335
+i 335 pmos 744 770 0 0 " l 240e-9 w 720e-9 "
+; nfet Instance /I3/0 = auLvs device Q336
+i 336 nmos 54 19 1 1 " l 240e-9 w 360e-9 "
+; pfet Instance /I3/1 = auLvs device Q337
+i 337 pmos 54 19 0 0 " l 240e-9 w 720e-9 "
+n 797 /I9/net1
+n 798 /I9/net2
+n 803 /I9/I2/net1
+n 804 /I9/I2/net3
+n 806 /I9/I2/I5/net9
+; nfet Instance /I9/I2/I5/1 = auLvs device Q338
+i 338 nmos 803 798 806 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I2/I5/0 = auLvs device Q339
+i 339 nmos 806 68 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I2/I5/3 = auLvs device Q340
+i 340 pmos 803 68 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I2/I5/2 = auLvs device Q341
+i 341 pmos 803 798 0 0 " l 240e-9 w 720e-9 "
+n 810 /I9/I2/I7/net9
+; nfet Instance /I9/I2/I7/1 = auLvs device Q342
+i 342 nmos 45 803 810 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I2/I7/0 = auLvs device Q343
+i 343 nmos 810 804 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I2/I7/3 = auLvs device Q344
+i 344 pmos 45 804 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I2/I7/2 = auLvs device Q345
+i 345 pmos 45 803 0 0 " l 240e-9 w 720e-9 "
+n 814 /I9/I2/I6/net9
+; nfet Instance /I9/I2/I6/1 = auLvs device Q346
+i 346 nmos 804 67 814 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I2/I6/0 = auLvs device Q347
+i 347 nmos 814 797 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I2/I6/3 = auLvs device Q348
+i 348 pmos 804 797 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I2/I6/2 = auLvs device Q349
+i 349 pmos 804 67 0 0 " l 240e-9 w 720e-9 "
+n 822 /I9/I3/net1
+n 823 /I9/I3/net3
+n 825 /I9/I3/I5/net9
+; nfet Instance /I9/I3/I5/1 = auLvs device Q350
+i 350 nmos 822 43 825 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I3/I5/0 = auLvs device Q351
+i 351 nmos 825 58 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I3/I5/3 = auLvs device Q352
+i 352 pmos 822 58 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I3/I5/2 = auLvs device Q353
+i 353 pmos 822 43 0 0 " l 240e-9 w 720e-9 "
+n 829 /I9/I3/I7/net9
+; nfet Instance /I9/I3/I7/1 = auLvs device Q354
+i 354 nmos 797 822 829 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I3/I7/0 = auLvs device Q355
+i 355 nmos 829 823 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I3/I7/3 = auLvs device Q356
+i 356 pmos 797 823 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I3/I7/2 = auLvs device Q357
+i 357 pmos 797 822 0 0 " l 240e-9 w 720e-9 "
+n 833 /I9/I3/I6/net9
+; nfet Instance /I9/I3/I6/1 = auLvs device Q358
+i 358 nmos 823 73 833 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I3/I6/0 = auLvs device Q359
+i 359 nmos 833 47 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I3/I6/3 = auLvs device Q360
+i 360 pmos 823 47 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I3/I6/2 = auLvs device Q361
+i 361 pmos 823 73 0 0 " l 240e-9 w 720e-9 "
+n 841 /I9/I0/net1
+n 842 /I9/I0/net3
+n 844 /I9/I0/I5/net9
+; nfet Instance /I9/I0/I5/1 = auLvs device Q362
+i 362 nmos 841 21 844 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I0/I5/0 = auLvs device Q363
+i 363 nmos 844 58 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I0/I5/3 = auLvs device Q364
+i 364 pmos 841 58 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I0/I5/2 = auLvs device Q365
+i 365 pmos 841 21 0 0 " l 240e-9 w 720e-9 "
+n 848 /I9/I0/I7/net9
+; nfet Instance /I9/I0/I7/1 = auLvs device Q366
+i 366 nmos 798 841 848 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I0/I7/0 = auLvs device Q367
+i 367 nmos 848 842 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I0/I7/3 = auLvs device Q368
+i 368 pmos 798 842 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I0/I7/2 = auLvs device Q369
+i 369 pmos 798 841 0 0 " l 240e-9 w 720e-9 "
+n 852 /I9/I0/I6/net9
+; nfet Instance /I9/I0/I6/1 = auLvs device Q370
+i 370 nmos 842 73 852 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I9/I0/I6/0 = auLvs device Q371
+i 371 nmos 852 78 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I0/I6/3 = auLvs device Q372
+i 372 pmos 842 78 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I9/I0/I6/2 = auLvs device Q373
+i 373 pmos 842 73 0 0 " l 240e-9 w 720e-9 "
+n 865 /I4/net1
+n 866 /I4/net2
+n 871 /I4/I2/net1
+n 872 /I4/I2/net3
+n 874 /I4/I2/I5/net9
+; nfet Instance /I4/I2/I5/1 = auLvs device Q374
+i 374 nmos 871 866 874 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I2/I5/0 = auLvs device Q375
+i 375 nmos 874 55 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I2/I5/3 = auLvs device Q376
+i 376 pmos 871 55 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I2/I5/2 = auLvs device Q377
+i 377 pmos 871 866 0 0 " l 240e-9 w 720e-9 "
+n 878 /I4/I2/I7/net9
+; nfet Instance /I4/I2/I7/1 = auLvs device Q378
+i 378 nmos 57 871 878 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I2/I7/0 = auLvs device Q379
+i 379 nmos 878 872 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I2/I7/3 = auLvs device Q380
+i 380 pmos 57 872 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I2/I7/2 = auLvs device Q381
+i 381 pmos 57 871 0 0 " l 240e-9 w 720e-9 "
+n 882 /I4/I2/I6/net9
+; nfet Instance /I4/I2/I6/1 = auLvs device Q382
+i 382 nmos 872 53 882 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I2/I6/0 = auLvs device Q383
+i 383 nmos 882 865 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I2/I6/3 = auLvs device Q384
+i 384 pmos 872 865 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I2/I6/2 = auLvs device Q385
+i 385 pmos 872 53 0 0 " l 240e-9 w 720e-9 "
+n 890 /I4/I3/net1
+n 891 /I4/I3/net3
+n 893 /I4/I3/I5/net9
+; nfet Instance /I4/I3/I5/1 = auLvs device Q386
+i 386 nmos 890 21 893 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I3/I5/0 = auLvs device Q387
+i 387 nmos 893 52 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I3/I5/3 = auLvs device Q388
+i 388 pmos 890 52 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I3/I5/2 = auLvs device Q389
+i 389 pmos 890 21 0 0 " l 240e-9 w 720e-9 "
+n 897 /I4/I3/I7/net9
+; nfet Instance /I4/I3/I7/1 = auLvs device Q390
+i 390 nmos 865 890 897 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I3/I7/0 = auLvs device Q391
+i 391 nmos 897 891 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I3/I7/3 = auLvs device Q392
+i 392 pmos 865 891 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I3/I7/2 = auLvs device Q393
+i 393 pmos 865 890 0 0 " l 240e-9 w 720e-9 "
+n 901 /I4/I3/I6/net9
+; nfet Instance /I4/I3/I6/1 = auLvs device Q394
+i 394 nmos 891 56 901 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I3/I6/0 = auLvs device Q395
+i 395 nmos 901 2 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I3/I6/3 = auLvs device Q396
+i 396 pmos 891 2 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I3/I6/2 = auLvs device Q397
+i 397 pmos 891 56 0 0 " l 240e-9 w 720e-9 "
+n 909 /I4/I0/net1
+n 910 /I4/I0/net3
+n 912 /I4/I0/I5/net9
+; nfet Instance /I4/I0/I5/1 = auLvs device Q398
+i 398 nmos 909 22 912 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I0/I5/0 = auLvs device Q399
+i 399 nmos 912 52 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I0/I5/3 = auLvs device Q400
+i 400 pmos 909 52 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I0/I5/2 = auLvs device Q401
+i 401 pmos 909 22 0 0 " l 240e-9 w 720e-9 "
+n 916 /I4/I0/I7/net9
+; nfet Instance /I4/I0/I7/1 = auLvs device Q402
+i 402 nmos 866 909 916 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I0/I7/0 = auLvs device Q403
+i 403 nmos 916 910 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I0/I7/3 = auLvs device Q404
+i 404 pmos 866 910 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I0/I7/2 = auLvs device Q405
+i 405 pmos 866 909 0 0 " l 240e-9 w 720e-9 "
+n 920 /I4/I0/I6/net9
+; nfet Instance /I4/I0/I6/1 = auLvs device Q406
+i 406 nmos 910 56 920 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I4/I0/I6/0 = auLvs device Q407
+i 407 nmos 920 50 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I0/I6/3 = auLvs device Q408
+i 408 pmos 910 50 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I4/I0/I6/2 = auLvs device Q409
+i 409 pmos 910 56 0 0 " l 240e-9 w 720e-9 "
+n 930 /I7/net1
+n 937 /I7/I1/net1
+n 938 /I7/I1/net3
+n 940 /I7/I1/I5/net9
+; nfet Instance /I7/I1/I5/1 = auLvs device Q410
+i 410 nmos 937 47 940 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I7/I1/I5/0 = auLvs device Q411
+i 411 nmos 940 74 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I1/I5/3 = auLvs device Q412
+i 412 pmos 937 74 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I1/I5/2 = auLvs device Q413
+i 413 pmos 937 47 0 0 " l 240e-9 w 720e-9 "
+n 944 /I7/I1/I7/net9
+; nfet Instance /I7/I1/I7/1 = auLvs device Q414
+i 414 nmos 48 937 944 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I7/I1/I7/0 = auLvs device Q415
+i 415 nmos 944 938 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I1/I7/3 = auLvs device Q416
+i 416 pmos 48 938 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I1/I7/2 = auLvs device Q417
+i 417 pmos 48 937 0 0 " l 240e-9 w 720e-9 "
+n 948 /I7/I1/I6/net9
+; nfet Instance /I7/I1/I6/1 = auLvs device Q418
+i 418 nmos 938 75 948 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I7/I1/I6/0 = auLvs device Q419
+i 419 nmos 948 930 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I1/I6/3 = auLvs device Q420
+i 420 pmos 938 930 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I1/I6/2 = auLvs device Q421
+i 421 pmos 938 75 0 0 " l 240e-9 w 720e-9 "
+n 956 /I7/I0/net1
+n 957 /I7/I0/net3
+n 959 /I7/I0/I5/net9
+; nfet Instance /I7/I0/I5/1 = auLvs device Q422
+i 422 nmos 956 78 959 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I7/I0/I5/0 = auLvs device Q423
+i 423 nmos 959 76 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I0/I5/3 = auLvs device Q424
+i 424 pmos 956 76 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I0/I5/2 = auLvs device Q425
+i 425 pmos 956 78 0 0 " l 240e-9 w 720e-9 "
+n 963 /I7/I0/I7/net9
+; nfet Instance /I7/I0/I7/1 = auLvs device Q426
+i 426 nmos 930 956 963 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I7/I0/I7/0 = auLvs device Q427
+i 427 nmos 963 957 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I0/I7/3 = auLvs device Q428
+i 428 pmos 930 957 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I0/I7/2 = auLvs device Q429
+i 429 pmos 930 956 0 0 " l 240e-9 w 720e-9 "
+n 967 /I7/I0/I6/net9
+; nfet Instance /I7/I0/I6/1 = auLvs device Q430
+i 430 nmos 957 77 967 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I7/I0/I6/0 = auLvs device Q431
+i 431 nmos 967 44 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I0/I6/3 = auLvs device Q432
+i 432 pmos 957 44 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I7/I0/I6/2 = auLvs device Q433
+i 433 pmos 957 77 0 0 " l 240e-9 w 720e-9 "
+n 977 /I6/net1
+n 984 /I6/I1/net1
+n 985 /I6/I1/net3
+n 987 /I6/I1/I5/net9
+; nfet Instance /I6/I1/I5/1 = auLvs device Q434
+i 434 nmos 984 2 987 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I6/I1/I5/0 = auLvs device Q435
+i 435 nmos 987 69 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I1/I5/3 = auLvs device Q436
+i 436 pmos 984 69 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I1/I5/2 = auLvs device Q437
+i 437 pmos 984 2 0 0 " l 240e-9 w 720e-9 "
+n 991 /I6/I1/I7/net9
+; nfet Instance /I6/I1/I7/1 = auLvs device Q438
+i 438 nmos 41 984 991 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I6/I1/I7/0 = auLvs device Q439
+i 439 nmos 991 985 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I1/I7/3 = auLvs device Q440
+i 440 pmos 41 985 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I1/I7/2 = auLvs device Q441
+i 441 pmos 41 984 0 0 " l 240e-9 w 720e-9 "
+n 995 /I6/I1/I6/net9
+; nfet Instance /I6/I1/I6/1 = auLvs device Q442
+i 442 nmos 985 70 995 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I6/I1/I6/0 = auLvs device Q443
+i 443 nmos 995 977 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I1/I6/3 = auLvs device Q444
+i 444 pmos 985 977 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I1/I6/2 = auLvs device Q445
+i 445 pmos 985 70 0 0 " l 240e-9 w 720e-9 "
+n 1003 /I6/I0/net1
+n 1004 /I6/I0/net3
+n 1006 /I6/I0/I5/net9
+; nfet Instance /I6/I0/I5/1 = auLvs device Q446
+i 446 nmos 1003 42 1006 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I6/I0/I5/0 = auLvs device Q447
+i 447 nmos 1006 71 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I0/I5/3 = auLvs device Q448
+i 448 pmos 1003 71 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I0/I5/2 = auLvs device Q449
+i 449 pmos 1003 42 0 0 " l 240e-9 w 720e-9 "
+n 1010 /I6/I0/I7/net9
+; nfet Instance /I6/I0/I7/1 = auLvs device Q450
+i 450 nmos 977 1003 1010 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I6/I0/I7/0 = auLvs device Q451
+i 451 nmos 1010 1004 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I0/I7/3 = auLvs device Q452
+i 452 pmos 977 1004 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I0/I7/2 = auLvs device Q453
+i 453 pmos 977 1003 0 0 " l 240e-9 w 720e-9 "
+n 1014 /I6/I0/I6/net9
+; nfet Instance /I6/I0/I6/1 = auLvs device Q454
+i 454 nmos 1004 72 1014 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I6/I0/I6/0 = auLvs device Q455
+i 455 nmos 1014 40 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I0/I6/3 = auLvs device Q456
+i 456 pmos 1004 40 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I6/I0/I6/2 = auLvs device Q457
+i 457 pmos 1004 72 0 0 " l 240e-9 w 720e-9 "
+n 1022 /I10/net1
+n 1023 /I10/net3
+n 1025 /I10/I5/net9
+; nfet Instance /I10/I5/1 = auLvs device Q458
+i 458 nmos 1022 47 1025 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I10/I5/0 = auLvs device Q459
+i 459 nmos 1025 79 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I10/I5/3 = auLvs device Q460
+i 460 pmos 1022 79 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I10/I5/2 = auLvs device Q461
+i 461 pmos 1022 47 0 0 " l 240e-9 w 720e-9 "
+n 1029 /I10/I7/net9
+; nfet Instance /I10/I7/1 = auLvs device Q462
+i 462 nmos 46 1022 1029 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I10/I7/0 = auLvs device Q463
+i 463 nmos 1029 1023 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I10/I7/3 = auLvs device Q464
+i 464 pmos 46 1023 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I10/I7/2 = auLvs device Q465
+i 465 pmos 46 1022 0 0 " l 240e-9 w 720e-9 "
+n 1033 /I10/I6/net9
+; nfet Instance /I10/I6/1 = auLvs device Q466
+i 466 nmos 1023 80 1033 1 " l 240e-9 w 720e-9 "
+; nfet Instance /I10/I6/0 = auLvs device Q467
+i 467 nmos 1033 2 1 1 " l 240e-9 w 720e-9 "
+; pfet Instance /I10/I6/3 = auLvs device Q468
+i 468 pmos 1023 2 0 0 " l 240e-9 w 720e-9 "
+; pfet Instance /I10/I6/2 = auLvs device Q469
+i 469 pmos 1023 80 0 0 " l 240e-9 w 720e-9 "
 t 0 vdd! global
 t 1 gnd! global

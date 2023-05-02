@@ -1,9 +1,9 @@
 // Library - ece425mp2, Cell - MUX3-1, View - schematic
 // LAST TIME SAVED: Apr  6 17:07:43 2023
-// NETLIST TIME: Apr  7 21:00:44 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
-module cdsModule_4 ( y, _s0, _s1, a, b, c, s0, s1 );
+module cdsModule_13 ( y, _s0, _s1, a, b, c, s0, s1 );
 
 output  y;
 

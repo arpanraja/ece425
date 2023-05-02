@@ -1,6 +1,6 @@
 // Library - ece425mp2, Cell - logic, View - schematic
-// LAST TIME SAVED: Apr 30 23:44:57 2023
-// NETLIST TIME: May  1 11:52:16 2023
+// LAST TIME SAVED: May  1 16:05:38 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module logic ( nand_, nor_, xor_, inv_r, inv_s, r, s );

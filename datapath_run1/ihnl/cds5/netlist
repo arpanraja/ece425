@@ -1,6 +1,6 @@
 // Library - ece425mp2, Cell - alu, View - schematic
-// LAST TIME SAVED: Apr  7 17:33:54 2023
-// NETLIST TIME: Apr  7 21:00:44 2023
+// LAST TIME SAVED: May  1 16:10:02 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module alu ( cout, f, p, _s0L, _s0ot, _s1L, cin, inv_r, inv_s, r, s,
@@ -19,7 +19,7 @@ endspecify
 
 add I12 ( cout, net26, cin, net33, net32, p);
 logic I11 ( net33, net32, p, inv_r, inv_s, r, s);
-cdsModule_4 I13 ( net3, _s0L, _s1L, p, net32, net33, s0L, s1L);
-cdsModule_3 I14 ( f, _s0ot, net3, net26, s0ot);
+cdsModule_13 I13 ( net3, _s0L, _s1L, p, net32, net33, s0L, s1L);
+cdsModule_12 I14 ( f, _s0ot, net3, net26, s0ot);
 
 endmodule

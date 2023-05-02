@@ -1,0 +1,18 @@
+// Library - edits, Cell - MUX2-1, View - schematic
+// LAST TIME SAVED: May  1 15:31:42 2023
+// NETLIST TIME: May  1 15:37:08 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_3 ( y, _s, a, b, s );
+
+output  y;
+
+input  _s, a, b, s;
+
+
+specify 
+    specparam CDS_LIBNAME  = "edits";
+    specparam CDS_CELLNAME = "MUX2-1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

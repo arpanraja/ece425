@@ -1,2 +1,5 @@
+nand2 I5 ( net1, b, s);
+nand2 I7 ( y, net1, net3);
+nand2 I6 ( net3, _s, a);
 
 endmodule

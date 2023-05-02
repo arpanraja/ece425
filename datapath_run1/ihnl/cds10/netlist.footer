@@ -1,5 +1,5 @@
-cdsModule_3 I2 ( y, _s1, net1, net2, s1);
-cdsModule_3 I3 ( net1, _s0, a, b, s0);
-cdsModule_3 I0 ( net2, _s0, c, d, s0);
+cdsModule_12 I2 ( y, _s1, net1, net2, s1);
+cdsModule_12 I3 ( net1, _s0, a, b, s0);
+cdsModule_12 I0 ( net2, _s0, c, d, s0);
 
 endmodule

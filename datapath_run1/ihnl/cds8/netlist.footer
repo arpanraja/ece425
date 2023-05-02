@@ -21,6 +21,6 @@ regbit I42 ( bitline_a, bitline_b, select_a_hi[5], select_b_hi[5]);
 regbit I43 ( bitline_a, bitline_b, select_a_hi[4], select_b_hi[4]);
 regbit I40 ( bitline_a, bitline_b, select_a_hi[7], select_b_hi[7]);
 regbit I32 ( bitline_a, bitline_b, select_a_hi[15], select_b_hi[15]);
-nor2 I58 ( net2, net3, cp);
+nor2 I61 ( net2, cp, net3);
 
 endmodule

@@ -8,26 +8,94 @@ Compiling Diva LVS rules...
 
     Net-list summary for /home/arpanr2/ece425.work/LVS/layout/netlist
        count
-        13              nets
-        6               terminals
-        10              pmos
-        10              nmos
+        268             nets
+        74              terminals
+        235             pmos
+        235             nmos
 
     Net-list summary for /home/arpanr2/ece425.work/LVS/schematic/netlist
        count
-        13              nets
-        6               terminals
-        10              pmos
-        10              nmos
+        268             nets
+        74              terminals
+        235             pmos
+        235             nmos
 
 
     Terminal correspondence points
-    N10       N2        CLK
-    N9        N6        _CLK
-    N8        N3        d
-    N7        N1        gnd!
-    N12       N4        q
-    N11       N0        vdd!
+    N250      N64       _s0L
+    N245      N56       _s0Q
+    N244      N72       _s0R
+    N240      N77       _s0RS
+    N225      N73       _s0SS
+    N199      N66       _s0ot
+    N236      N62       _s1L
+    N230      N53       _s1Q
+    N229      N70       _s1R
+    N209      N75       _s1RS
+    N200      N67       _s1SS
+    N258      N80       _sY
+    N256      N49       cin
+    N239      N23       cout
+    N231      N19       cp
+    N203      N44       d
+    N201      N2        f
+    N220      N40       f_left
+    N204      N42       f_right
+    N202      N1        gnd!
+    N262      N60       inv_r
+    N261      N59       inv_s
+    N226      N78       lo
+    N194      N20       p
+    N267      N21       q
+    N265      N50       q_left
+    N248      N22       q_right
+    N257      N51       reg_wr
+    N253      N63       s0L
+    N247      N52       s0Q
+    N246      N71       s0R
+    N207      N76       s0RS
+    N197      N58       s0SS
+    N221      N65       s0ot
+    N241      N61       s1L
+    N233      N55       s1Q
+    N232      N69       s1R
+    N235      N74       s1RS
+    N223      N68       s1SS
+    N266      N79       sY
+    N243      N39       select_a_hi<0>
+    N255      N29       select_a_hi<10>
+    N249      N28       select_a_hi<11>
+    N234      N27       select_a_hi<12>
+    N222      N26       select_a_hi<13>
+    N216      N25       select_a_hi<14>
+    N213      N24       select_a_hi<15>
+    N228      N38       select_a_hi<1>
+    N219      N37       select_a_hi<2>
+    N215      N36       select_a_hi<3>
+    N211      N35       select_a_hi<4>
+    N206      N34       select_a_hi<5>
+    N196      N33       select_a_hi<6>
+    N260      N32       select_a_hi<7>
+    N252      N31       select_a_hi<8>
+    N238      N30       select_a_hi<9>
+    N227      N18       select_b_hi<0>
+    N212      N8        select_b_hi<10>
+    N208      N7        select_b_hi<11>
+    N198      N6        select_b_hi<12>
+    N264      N5        select_b_hi<13>
+    N254      N4        select_b_hi<14>
+    N242      N3        select_b_hi<15>
+    N218      N17       select_b_hi<1>
+    N214      N16       select_b_hi<2>
+    N210      N15       select_b_hi<3>
+    N205      N14       select_b_hi<4>
+    N195      N13       select_b_hi<5>
+    N259      N12       select_b_hi<6>
+    N251      N11       select_b_hi<7>
+    N237      N10       select_b_hi<8>
+    N224      N9        select_b_hi<9>
+    N217      N0        vdd!
+    N263      N46       y
 
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
@@ -40,21 +108,21 @@ The net-lists match.
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  20      20     
-        total                   20      20     
+        active                  470     470    
+        total                   470     470    
 
                                   nets
         un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  13      13     
-        total                   13      13     
+        active                  268     268    
+        total                   268     268    
 
                                 terminals
         un-matched              0       0      
         matched but
         different type          0       0      
-        total                   6       6      
+        total                   74      74     
 
 
 Probe files from /home/arpanr2/ece425.work/LVS/schematic

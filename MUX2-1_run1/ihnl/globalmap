@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+edits/MUX2-1/schematic cdsModule_3
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

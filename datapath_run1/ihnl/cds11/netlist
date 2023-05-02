@@ -1,6 +1,6 @@
 // Library - ece425mp2, Cell - bitslice, View - schematic
-// LAST TIME SAVED: Apr  7 20:43:28 2023
-// NETLIST TIME: Apr  7 21:00:44 2023
+// LAST TIME SAVED: May  1 16:10:05 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module bitslice ( cout, f, p, q, y, _s0L, _s0Q, _s0R, _s0RS, _s0SS,
@@ -32,11 +32,11 @@ regfile I0 ( net16, net15, cp, net13, select_a_hi[15:0],
      select_b_hi[15:0], reg_wr);
 q_register I2 ( q, cp, net1, net2);
 inv I3 ( net1, cp);
-cdsModule_5 I9 ( net028, _s0SS, _s1SS, net16, net15, lo, q, s0SS,
+cdsModule_14 I9 ( net028, _s0SS, _s1SS, net16, net15, lo, q, s0SS,
      s1SS);
-cdsModule_5 I4 ( net2, _s0Q, _s1Q, f, q, q_left, q_right, s0Q, s1Q);
-cdsModule_4 I7 ( net027, _s0RS, _s1RS, d, lo, net16, s0RS, s1RS);
-cdsModule_4 I6 ( net13, _s0R, _s1R, f_left, f_right, f, s0R, s1R);
-cdsModule_3 I10 ( y, _sY, f, net16, sY);
+cdsModule_14 I4 ( net2, _s0Q, _s1Q, f, q, q_left, q_right, s0Q, s1Q);
+cdsModule_13 I7 ( net027, _s0RS, _s1RS, d, lo, net16, s0RS, s1RS);
+cdsModule_13 I6 ( net13, _s0R, _s1R, f_left, f_right, f, s0R, s1R);
+cdsModule_12 I10 ( y, _sY, f, net16, sY);
 
 endmodule

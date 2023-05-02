@@ -9,10 +9,10 @@ ece425mp2/regfile/schematic regfile
 ece425mp2/latch/schematic latch
 ece425mp2/datapath/schematic datapath
 ece425mp2/add/schematic add
-ece425mp2/MUX3-1/schematic cdsModule_4
-ece425mp2/MUX2-1/schematic cdsModule_3
+ece425mp2/MUX3-1/schematic cdsModule_13
+ece425mp2/MUX2-1/schematic cdsModule_12
 ece425mp2/bitslice/schematic bitslice
-ece425mp2/MUX4-1/schematic cdsModule_5
+ece425mp2/MUX4-1/schematic cdsModule_14
 $endmodel
 $net
 gnd! cds_globals.gnd_

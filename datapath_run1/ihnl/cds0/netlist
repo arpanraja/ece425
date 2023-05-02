@@ -1,6 +1,6 @@
 // Library - ece425mp1, Cell - xor2, View - schematic
 // LAST TIME SAVED: Mar  2 17:44:42 2023
-// NETLIST TIME: Apr  7 21:00:44 2023
+// NETLIST TIME: May  1 16:10:47 2023
 `timescale 1ns / 1ns 
 
 module xor2 ( y, a, b );
