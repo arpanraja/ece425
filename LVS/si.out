@@ -8,132 +8,182 @@ Compiling Diva LVS rules...
 
     Net-list summary for /home/arpanr2/ece425.work/LVS/layout/netlist
        count
-        268             nets
-        74              terminals
-        235             pmos
-        235             nmos
+        873             nets
+        90              terminals
+        940             pmos
+        940             nmos
 
     Net-list summary for /home/arpanr2/ece425.work/LVS/schematic/netlist
        count
-        268             nets
-        74              terminals
-        235             pmos
-        235             nmos
+        868             nets
+        90              terminals
+        940             pmos
+        940             nmos
 
 
     Terminal correspondence points
-    N251      N64       _s0L
-    N246      N56       _s0Q
-    N245      N72       _s0R
-    N241      N77       _s0RS
-    N226      N73       _s0SS
-    N200      N66       _s0ot
-    N237      N62       _s1L
-    N231      N53       _s1Q
-    N230      N70       _s1R
-    N210      N75       _s1RS
-    N201      N67       _s1SS
-    N259      N80       _sY
-    N257      N49       cin
-    N240      N23       cout
-    N232      N19       cp
-    N204      N44       d
-    N202      N2        f
-    N221      N40       f_left
-    N205      N42       f_right
-    N203      N1        gnd!
-    N263      N60       inv_r
-    N262      N59       inv_s
-    N227      N78       lo
-    N195      N20       p
-    N268      N21       q
-    N266      N50       q_left
-    N249      N22       q_right
-    N258      N51       reg_wr
-    N254      N63       s0L
-    N248      N52       s0Q
-    N247      N71       s0R
-    N208      N76       s0RS
-    N198      N58       s0SS
-    N222      N65       s0ot
-    N242      N61       s1L
-    N234      N55       s1Q
-    N233      N69       s1R
-    N236      N74       s1RS
-    N224      N68       s1SS
-    N267      N79       sY
-    N244      N39       select_a_hi<0>
-    N256      N29       select_a_hi<10>
-    N250      N28       select_a_hi<11>
-    N235      N27       select_a_hi<12>
-    N223      N26       select_a_hi<13>
-    N217      N25       select_a_hi<14>
-    N214      N24       select_a_hi<15>
-    N229      N38       select_a_hi<1>
-    N220      N37       select_a_hi<2>
-    N216      N36       select_a_hi<3>
-    N212      N35       select_a_hi<4>
-    N207      N34       select_a_hi<5>
-    N197      N33       select_a_hi<6>
-    N261      N32       select_a_hi<7>
-    N253      N31       select_a_hi<8>
-    N239      N30       select_a_hi<9>
-    N228      N18       select_b_hi<0>
-    N213      N8        select_b_hi<10>
-    N209      N7        select_b_hi<11>
-    N199      N6        select_b_hi<12>
-    N265      N5        select_b_hi<13>
-    N255      N4        select_b_hi<14>
-    N243      N3        select_b_hi<15>
-    N219      N17       select_b_hi<1>
-    N215      N16       select_b_hi<2>
-    N211      N15       select_b_hi<3>
-    N206      N14       select_b_hi<4>
-    N196      N13       select_b_hi<5>
-    N260      N12       select_b_hi<6>
-    N252      N11       select_b_hi<7>
-    N238      N10       select_b_hi<8>
-    N225      N9        select_b_hi<9>
-    N218      N0        vdd!
-    N264      N46       y
+    N853      N88       _s0L
+    N849      N79       _s0Q
+    N848      N83       _s0R
+    N842      N87       _s0RS
+    N824      N69       _s0SS
+    N789      N77       _s0ot
+    N839      N74       _s1L
+    N831      N70       _s1Q
+    N829      N81       _s1R
+    N798      N85       _s1RS
+    N790      N71       _s1SS
+    N864      N89       _sY
+    N810      N42       c<0>
+    N801      N41       c<1>
+    N795      N40       c<2>
+    N785      N39       c<3>
+    N860      N63       cin
+    N830      N3        cp
+    N871      N54       d<0>
+    N859      N55       d<1>
+    N846      N56       d<2>
+    N827      N57       d<3>
+    N863      N58       f0_in
+    N823      N61       f3_in
+    N788      N48       f<0>
+    N870      N49       f<1>
+    N858      N47       f<2>
+    N845      N53       f<3>
+    N792      N1        gnd!
+    N868      N72       inv_r
+    N867      N65       inv_s
+    N825      N91       lo
+    N833      N38       p<0>
+    N817      N45       p<1>
+    N811      N44       p<2>
+    N803      N43       p<3>
+    N832      N59       q0_in
+    N807      N64       q0_out
+    N804      N60       q3_in
+    N791      N36       q3_out
+    N862      N62       reg_wr
+    N856      N75       s0L
+    N851      N78       s0Q
+    N850      N82       s0R
+    N796      N86       s0RS
+    N786      N68       s0SS
+    N818      N76       s0ot
+    N843      N73       s1L
+    N836      N67       s1Q
+    N834      N80       s1R
+    N838      N84       s1RS
+    N821      N66       s1SS
+    N872      N90       sY
+    N847      N19       select_a_hi<0>
+    N861      N9        select_a_hi<10>
+    N852      N8        select_a_hi<11>
+    N837      N7        select_a_hi<12>
+    N820      N6        select_a_hi<13>
+    N813      N5        select_a_hi<14>
+    N806      N4        select_a_hi<15>
+    N828      N18       select_a_hi<1>
+    N816      N17       select_a_hi<2>
+    N809      N16       select_a_hi<3>
+    N800      N15       select_a_hi<4>
+    N794      N14       select_a_hi<5>
+    N784      N13       select_a_hi<6>
+    N866      N12       select_a_hi<7>
+    N855      N11       select_a_hi<8>
+    N841      N10       select_a_hi<9>
+    N826      N35       select_b_hi<0>
+    N802      N25       select_b_hi<10>
+    N797      N24       select_b_hi<11>
+    N787      N23       select_b_hi<12>
+    N869      N22       select_b_hi<13>
+    N857      N21       select_b_hi<14>
+    N844      N20       select_b_hi<15>
+    N815      N34       select_b_hi<1>
+    N808      N33       select_b_hi<2>
+    N799      N32       select_b_hi<3>
+    N793      N31       select_b_hi<4>
+    N783      N30       select_b_hi<5>
+    N865      N29       select_b_hi<6>
+    N854      N28       select_b_hi<7>
+    N840      N27       select_b_hi<8>
+    N822      N26       select_b_hi<9>
+    N814      N0        vdd!
+    N835      N52       y<0>
+    N819      N51       y<1>
+    N812      N50       y<2>
+    N805      N46       y<3>
 
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
 
-The net-lists match.
+    Ill-defined correspondence points.
+
+	N807	N64  Accepted because one is a subset of the other
+	N807	N64  Accepted because one is a subset of the other
+	N791	N36  Accepted because one is a subset of the other
+	N791	N36  Accepted because one is a subset of the other
+
+
+        Device summary for layout
+                   bad  total
+            pmos     2    940
+            nmos     2    940
+
+
+        Device summary for schematic
+                   bad  total
+            pmos     2    940
+            nmos     2    940
+
+1 net-list ambiguity was resolved by random selection.
+
+The net-lists failed to match.
 
                              layout  schematic
                                 instances
-        un-matched              0       0      
+        un-matched              12      12     
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  470     470    
-        total                   470     470    
+        active                  1880    1880   
+        total                   1880    1880   
 
                                   nets
-        un-matched              0       0      
-        merged                  0       0      
+        un-matched              5       3      
+        merged                  3       0      
         pruned                  0       0      
-        active                  268     268    
-        total                   268     268    
+        active                  873     868    
+        total                   873     868    
 
                                 terminals
-        un-matched              0       0      
+        un-matched              2       2      
         matched but
         different type          0       0      
-        total                   74      74     
+        total                   90      90     
 
 
 Probe files from /home/arpanr2/ece425.work/LVS/schematic
 
 devbad.out:
+The no. of lines exceeded than specified by the variable lvsLimitLinesInOutFile.
+To see the complete information please see the file:
+/home/arpanr2/ece425.work/LVS/schematic/devbad.out
 
 netbad.out:
+N /q3_out
+? Net does not cross-match. It has 11 connections.
+N /q0_out
+? Net does not cross-match. It has 11 connections.
+N /I2/I4/I0/I6/net9
+? Net does not cross-match. It has 2 connections.
 
 mergenet.out:
 
 termbad.out:
+T -1  q0_out /q0_out
+? Terminal q0_out in the schematic failed to match any terminal in the layout.
+T -1  q3_out /q3_out
+? Terminal q3_out in the schematic failed to match any terminal in the layout.
 
 prunenet.out:
 
@@ -145,12 +195,35 @@ audit.out:
 Probe files from /home/arpanr2/ece425.work/LVS/layout
 
 devbad.out:
+The no. of lines exceeded than specified by the variable lvsLimitLinesInOutFile.
+To see the complete information please see the file:
+/home/arpanr2/ece425.work/LVS/layout/devbad.out
 
 netbad.out:
+N /871
+? Net does not cross-match. It has 2 connections.
+N /872
+? Net does not cross-match. It has 2 connections.
+N /q3_out
+? Net does not cross-match. It has 9 connections.
+N /q0_out
+? Net does not cross-match. It has 9 connections.
+N /96
+? Net does not cross-match. It has 2 connections.
 
 mergenet.out:
+N /870
+? Net /870 merged with /228
+N /873
+? Net /873 merged with /227
+N /869
+? Net /869 merged with /227
 
 termbad.out:
+T -1  q0_out /q0_out
+? Terminal q0_out in the layout failed to match any terminal in the schematic.
+T -1  q3_out /q3_out
+? Terminal q3_out in the layout failed to match any terminal in the schematic.
 
 prunenet.out:
 
